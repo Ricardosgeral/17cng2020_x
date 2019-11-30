@@ -1,4 +1,4 @@
-// modified by ricardos.geral@gmail.com
+// modified by ricardos.geral@gmail.com lnec
 // ekke (Ekkehard Gentz) @ekkescorner
 import QtQuick 2.9
 import QtQuick.Window 2.10
