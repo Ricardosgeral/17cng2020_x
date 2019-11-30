@@ -1,3 +1,4 @@
+// modified by ricardos.geral@gmail.com
 // ekke (Ekkehard Gentz) @ekkescorner
 import QtQuick 2.9
 import QtQuick.Window 2.10
@@ -12,9 +13,6 @@ import "popups"
 import "tabs"
 import "navigation"
 import StatusBar 0.1
-
-// ekke (Ekkehard gentz) @ekkescorner
-// this App was done in my rare spare time to support Qt community
 
 ApplicationWindow {
     id: appWindow
