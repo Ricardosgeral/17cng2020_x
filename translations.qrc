@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/17cng2020_x.qm</file>
+        <file>translations/17cng2020_x.ts</file>
+        <file>translations/17cng2020_x_de.qm</file>
+        <file>translations/17cng2020_x_de.ts</file>
+        <file>translations/17cng2020_x_en.qm</file>
+        <file>translations/17cng2020_x_en.ts</file>
+        <file>translations/17cng2020_x_fr.qm</file>
+        <file>translations/17cng2020_x_fr.ts</file>
+    </qresource>
+</RCC>
