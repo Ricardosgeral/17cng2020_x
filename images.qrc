@@ -2908,7 +2908,6 @@
         <file>images/extra/sponsors_types_ouro.png</file>
         <file>images/extra/sponsors_types_platina.png</file>
         <file>images/extra/sponsors_types_prata.png</file>
-        <file>qml/pages/test.qml</file>
         <file>images/extra/homepage_app.png</file>
         <file>images/extra/mapLNEC.png</file>
     </qresource>
