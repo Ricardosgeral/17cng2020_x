@@ -1,3 +1,4 @@
+# modified by ricardos.geral@gmail.com
 # ekke (Ekkehard Gentz) @ekkescorner
 TEMPLATE = app
 TARGET = 17cng2020_x
