@@ -122,7 +122,7 @@ ListView {
                                 text: model.modelData.title
                                 font.bold: true
                                 wrapMode: Label.WordWrap
-                                maximumLineCount: 2
+                                maximumLineCount: 3
                                 elide: Label.ElideRight
                             } // label
                             RowLayout {
@@ -193,7 +193,6 @@ ListView {
     section.property: "sortKey"
     section.criteria: ViewSection.FullString
     section.delegate: sectionHeading
-
     ScrollIndicator.vertical: ScrollIndicator { }
 
 } // end listView
