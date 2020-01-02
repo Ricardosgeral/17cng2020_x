@@ -392,7 +392,7 @@ void SessionLists::setScheduledSessions(QList<Session*> scheduledSessions)
  */
 QQmlListProperty<Session> SessionLists::scheduledSessionsPropertyList()
 {
-    return QQmlListProperty<Session>(this, 0, &SessionLists::appendToScheduledSessionsProperty,
+    return QQmlListProperty<Session>(this, nullptr, &SessionLists::appendToScheduledSessionsProperty,
             &SessionLists::scheduledSessionsPropertyCount, &SessionLists::atScheduledSessionsProperty,
             &SessionLists::clearScheduledSessionsProperty);
 }
@@ -429,7 +429,7 @@ Session* SessionLists::atScheduledSessionsProperty(QQmlListProperty<Session> *sc
     } else {
         qWarning() << "cannot get Session* at pos " << pos << "Object is not of type SessionLists*";
     }
-    return 0;
+    return nullptr;
 }
 void SessionLists::clearScheduledSessionsProperty(QQmlListProperty<Session> *scheduledSessionsList)
 {
@@ -567,7 +567,7 @@ void SessionLists::setSameTimeSessions(QList<Session*> sameTimeSessions)
  */
 QQmlListProperty<Session> SessionLists::sameTimeSessionsPropertyList()
 {
-    return QQmlListProperty<Session>(this, 0, &SessionLists::appendToSameTimeSessionsProperty,
+    return QQmlListProperty<Session>(this, nullptr, &SessionLists::appendToSameTimeSessionsProperty,
             &SessionLists::sameTimeSessionsPropertyCount, &SessionLists::atSameTimeSessionsProperty,
             &SessionLists::clearSameTimeSessionsProperty);
 }
@@ -604,7 +604,7 @@ Session* SessionLists::atSameTimeSessionsProperty(QQmlListProperty<Session> *sam
     } else {
         qWarning() << "cannot get Session* at pos " << pos << "Object is not of type SessionLists*";
     }
-    return 0;
+    return nullptr;
 }
 void SessionLists::clearSameTimeSessionsProperty(QQmlListProperty<Session> *sameTimeSessionsList)
 {

@@ -20,7 +20,7 @@ class SpeakerAPI: public QObject
 
 
 public:
-	SpeakerAPI(QObject *parent = 0);
+    SpeakerAPI(QObject *parent = nullptr);
 
 
 	void fillFromMap(const QVariantMap& speakerAPIMap);

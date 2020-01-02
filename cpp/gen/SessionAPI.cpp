@@ -509,7 +509,7 @@ void SessionAPI::setSessionTracks(QList<SessionTrackAPI*> sessionTracks)
  */
 QQmlListProperty<SessionTrackAPI> SessionAPI::sessionTracksPropertyList()
 {
-    return QQmlListProperty<SessionTrackAPI>(this, 0, &SessionAPI::appendToSessionTracksProperty,
+    return QQmlListProperty<SessionTrackAPI>(this, nullptr, &SessionAPI::appendToSessionTracksProperty,
             &SessionAPI::sessionTracksPropertyCount, &SessionAPI::atSessionTracksProperty,
             &SessionAPI::clearSessionTracksProperty);
 }
@@ -546,7 +546,7 @@ SessionTrackAPI* SessionAPI::atSessionTracksProperty(QQmlListProperty<SessionTra
     } else {
         qWarning() << "cannot get SessionTrackAPI* at pos " << pos << "Object is not of type SessionAPI*";
     }
-    return 0;
+    return nullptr;
 }
 void SessionAPI::clearSessionTracksProperty(QQmlListProperty<SessionTrackAPI> *sessionTracksList)
 {
@@ -684,7 +684,7 @@ void SessionAPI::setPresenter(QList<PersonsAPI*> presenter)
  */
 QQmlListProperty<PersonsAPI> SessionAPI::presenterPropertyList()
 {
-    return QQmlListProperty<PersonsAPI>(this, 0, &SessionAPI::appendToPresenterProperty,
+    return QQmlListProperty<PersonsAPI>(this, nullptr, &SessionAPI::appendToPresenterProperty,
             &SessionAPI::presenterPropertyCount, &SessionAPI::atPresenterProperty,
             &SessionAPI::clearPresenterProperty);
 }
@@ -721,7 +721,7 @@ PersonsAPI* SessionAPI::atPresenterProperty(QQmlListProperty<PersonsAPI> *presen
     } else {
         qWarning() << "cannot get PersonsAPI* at pos " << pos << "Object is not of type SessionAPI*";
     }
-    return 0;
+    return nullptr;
 }
 void SessionAPI::clearPresenterProperty(QQmlListProperty<PersonsAPI> *presenterList)
 {

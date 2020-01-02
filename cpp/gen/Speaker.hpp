@@ -35,7 +35,7 @@ class Speaker: public QObject
 	Q_PROPERTY(QQmlListProperty<Conference> conferencesPropertyList READ conferencesPropertyList NOTIFY conferencesPropertyListChanged)
 
 public:
-	Speaker(QObject *parent = 0);
+    Speaker(QObject *parent = nullptr);
 
 	Q_INVOKABLE
 	bool isAllResolved();

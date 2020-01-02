@@ -25,7 +25,7 @@ class SessionTrack: public QObject
 	Q_PROPERTY(QQmlListProperty<Session> sessionsPropertyList READ sessionsPropertyList NOTIFY sessionsPropertyListChanged)
 
 public:
-	SessionTrack(QObject *parent = 0);
+    SessionTrack(QObject *parent = nullptr);
 
 	Q_INVOKABLE
 	bool isAllResolved();

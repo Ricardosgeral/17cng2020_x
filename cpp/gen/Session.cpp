@@ -26,6 +26,9 @@ static const QString isGenericScheduleSessionKey = "isGenericScheduleSession";
 static const QString isBreakKey = "isBreak";
 static const QString isLunchKey = "isLunch";
 static const QString isEventKey = "isEvent";
+
+static const QString isTourKey = "isTour";
+
 static const QString isRegistrationKey = "isRegistration";
 static const QString titleKey = "title";
 static const QString descriptionKey = "description";
@@ -56,6 +59,9 @@ static const QString isGenericScheduleSessionForeignKey = "isGenericScheduleSess
 static const QString isBreakForeignKey = "isBreak";
 static const QString isLunchForeignKey = "isLunch";
 static const QString isEventForeignKey = "isEvent";
+
+static const QString isTourForeignKey = "isTour";
+
 static const QString isRegistrationForeignKey = "isRegistration";
 static const QString titleForeignKey = "title";
 static const QString descriptionForeignKey = "description";
@@ -78,10 +84,10 @@ Session::Session(QObject *parent) :
 {
 	// lazy references:
 	mSessionDay = -1;
-	mSessionDayAsDataObject = 0;
+    mSessionDayAsDataObject = nullptr;
 	mSessionDayInvalid = false;
 	mRoom = -1;
-	mRoomAsDataObject = 0;
+    mRoomAsDataObject = nullptr;
 	mRoomInvalid = false;
 	// Date, Time or Timestamp ? construct null value
 	mStartTime = QTime();
@@ -134,6 +140,10 @@ void Session::fillFromMap(const QVariantMap& sessionMap)
 	mIsBreak = sessionMap.value(isBreakKey).toBool();
 	mIsLunch = sessionMap.value(isLunchKey).toBool();
 	mIsEvent = sessionMap.value(isEventKey).toBool();
+
+    mIsTour = sessionMap.value(isTourKey).toBool();
+
+
 	mIsRegistration = sessionMap.value(isRegistrationKey).toBool();
 	mTitle = sessionMap.value(titleKey).toString();
 	mDescription = sessionMap.value(descriptionKey).toString();
@@ -211,6 +221,9 @@ void Session::fillFromForeignMap(const QVariantMap& sessionMap)
 	mIsBreak = sessionMap.value(isBreakForeignKey).toBool();
 	mIsLunch = sessionMap.value(isLunchForeignKey).toBool();
 	mIsEvent = sessionMap.value(isEventForeignKey).toBool();
+
+    mIsTour = sessionMap.value(isTourForeignKey).toBool();
+
 	mIsRegistration = sessionMap.value(isRegistrationForeignKey).toBool();
 	mTitle = sessionMap.value(titleForeignKey).toString();
 	mDescription = sessionMap.value(descriptionForeignKey).toString();
@@ -288,6 +301,9 @@ void Session::fillFromCacheMap(const QVariantMap& sessionMap)
 	mIsBreak = sessionMap.value(isBreakKey).toBool();
 	mIsLunch = sessionMap.value(isLunchKey).toBool();
 	mIsEvent = sessionMap.value(isEventKey).toBool();
+
+    mIsTour = sessionMap.value(isTourKey).toBool();
+
 	mIsRegistration = sessionMap.value(isRegistrationKey).toBool();
 	mTitle = sessionMap.value(titleKey).toString();
 	mDescription = sessionMap.value(descriptionKey).toString();
@@ -421,6 +437,9 @@ QVariantMap Session::toMap()
 	sessionMap.insert(isBreakKey, mIsBreak);
 	sessionMap.insert(isLunchKey, mIsLunch);
 	sessionMap.insert(isEventKey, mIsEvent);
+
+    sessionMap.insert(isTourKey, mIsTour);
+
 	sessionMap.insert(isRegistrationKey, mIsRegistration);
 	sessionMap.insert(titleKey, mTitle);
 	sessionMap.insert(descriptionKey, mDescription);
@@ -500,6 +519,9 @@ QVariantMap Session::toForeignMap()
 	sessionMap.insert(isBreakForeignKey, mIsBreak);
 	sessionMap.insert(isLunchForeignKey, mIsLunch);
 	sessionMap.insert(isEventForeignKey, mIsEvent);
+
+    sessionMap.insert(isTourForeignKey, mIsTour);
+
 	sessionMap.insert(isRegistrationForeignKey, mIsRegistration);
 	sessionMap.insert(titleForeignKey, mTitle);
 	sessionMap.insert(descriptionForeignKey, mDescription);
@@ -580,6 +602,10 @@ QVariantMap Session::toCacheMap()
 	sessionMap.insert(isBreakKey, mIsBreak);
 	sessionMap.insert(isLunchKey, mIsLunch);
 	sessionMap.insert(isEventKey, mIsEvent);
+
+    sessionMap.insert(isTourKey, mIsTour);
+
+
 	sessionMap.insert(isRegistrationKey, mIsRegistration);
 	sessionMap.insert(titleKey, mTitle);
 	sessionMap.insert(descriptionKey, mDescription);
@@ -613,7 +639,7 @@ void Session::setSessionDay(int sessionDay)
         // remove old Data Object if one was resolved
         if (mSessionDayAsDataObject) {
             // reset pointer, don't delete the independent object !
-            mSessionDayAsDataObject = 0;
+            mSessionDayAsDataObject = nullptr;
         }
         // set the new lazy reference
         mSessionDay = sessionDay;
@@ -680,7 +706,7 @@ void Session::setRoom(int room)
         // remove old Data Object if one was resolved
         if (mRoomAsDataObject) {
             // reset pointer, don't delete the independent object !
-            mRoomAsDataObject = 0;
+            mRoomAsDataObject = nullptr;
         }
         // set the new lazy reference
         mRoom = room;
@@ -940,6 +966,32 @@ void Session::setIsEvent(bool isEvent)
 		emit isEventChanged(isEvent);
 	}
 }
+
+
+
+
+// ATT
+// Optional: isTour
+bool Session::isTour() const
+{
+    return mIsTour;
+}
+
+void Session::setIsTour(bool isTour)
+{
+    if (isTour != mIsTour) {
+        mIsTour = isTour;
+        emit isTourChanged(isTour);
+    }
+}
+
+
+
+
+
+
+
+
 // ATT 
 // Optional: isRegistration
 bool Session::isRegistration() const
@@ -1233,7 +1285,7 @@ void Session::setPresenter(QList<Speaker*> presenter)
  */
 QQmlListProperty<Speaker> Session::presenterPropertyList()
 {
-    return QQmlListProperty<Speaker>(this, 0, &Session::appendToPresenterProperty,
+    return QQmlListProperty<Speaker>(this, nullptr, &Session::appendToPresenterProperty,
             &Session::presenterPropertyCount, &Session::atPresenterProperty,
             &Session::clearPresenterProperty);
 }
@@ -1270,7 +1322,7 @@ Speaker* Session::atPresenterProperty(QQmlListProperty<Speaker> *presenterList, 
     } else {
         qWarning() << "cannot get Speaker* at pos " << pos << "Object is not of type Session*";
     }
-    return 0;
+    return nullptr;
 }
 void Session::clearPresenterProperty(QQmlListProperty<Speaker> *presenterList)
 {
@@ -1408,7 +1460,7 @@ void Session::setSessionTracks(QList<SessionTrack*> sessionTracks)
  */
 QQmlListProperty<SessionTrack> Session::sessionTracksPropertyList()
 {
-    return QQmlListProperty<SessionTrack>(this, 0, &Session::appendToSessionTracksProperty,
+    return QQmlListProperty<SessionTrack>(this, nullptr, &Session::appendToSessionTracksProperty,
             &Session::sessionTracksPropertyCount, &Session::atSessionTracksProperty,
             &Session::clearSessionTracksProperty);
 }
@@ -1445,7 +1497,7 @@ SessionTrack* Session::atSessionTracksProperty(QQmlListProperty<SessionTrack> *s
     } else {
         qWarning() << "cannot get SessionTrack* at pos " << pos << "Object is not of type Session*";
     }
-    return 0;
+    return nullptr;
 }
 void Session::clearSessionTracksProperty(QQmlListProperty<SessionTrack> *sessionTracksList)
 {

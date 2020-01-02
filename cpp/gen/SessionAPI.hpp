@@ -29,7 +29,7 @@ class SessionAPI: public QObject
 	Q_PROPERTY(QQmlListProperty<PersonsAPI> presenterPropertyList READ presenterPropertyList NOTIFY presenterPropertyListChanged)
 
 public:
-	SessionAPI(QObject *parent = 0);
+    SessionAPI(QObject *parent = nullptr);
 
 	Q_INVOKABLE
 	bool isAllResolved();

@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QTranslator translator;
-    if (translator.load(QLocale(), QLatin1String("c2gQtWS_x"), QLatin1String("_"), QLatin1String(":/translations"))) {
+    if (translator.load(QLocale(), QLatin1String("17cng2020_x"), QLatin1String("_"), QLatin1String(":/translations"))) {
         app.installTranslator(&translator);
     } else {
         qDebug() << "cannot load translator " << QLocale::system().name() << " check content of translations.qrc";

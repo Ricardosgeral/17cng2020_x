@@ -38,7 +38,7 @@ Speaker::Speaker(QObject *parent) :
 {
 	// lazy references:
 	mSpeakerImage = -1;
-	mSpeakerImageAsDataObject = 0;
+    mSpeakerImageAsDataObject = nullptr;
 	mSpeakerImageInvalid = false;
 		// lazy Arrays where only keys are persisted
 		mSessionsKeysResolved = false;
@@ -320,7 +320,7 @@ void Speaker::setSpeakerImage(int speakerImage)
         // remove old Data Object if one was resolved
         if (mSpeakerImageAsDataObject) {
             // reset pointer, don't delete the independent object !
-            mSpeakerImageAsDataObject = 0;
+            mSpeakerImageAsDataObject = nullptr;
         }
         // set the new lazy reference
         mSpeakerImage = speakerImage;
@@ -607,7 +607,7 @@ void Speaker::setSessions(QList<Session*> sessions)
  */
 QQmlListProperty<Session> Speaker::sessionsPropertyList()
 {
-    return QQmlListProperty<Session>(this, 0, &Speaker::appendToSessionsProperty,
+    return QQmlListProperty<Session>(this, nullptr, &Speaker::appendToSessionsProperty,
             &Speaker::sessionsPropertyCount, &Speaker::atSessionsProperty,
             &Speaker::clearSessionsProperty);
 }
@@ -644,7 +644,7 @@ Session* Speaker::atSessionsProperty(QQmlListProperty<Session> *sessionsList, in
     } else {
         qWarning() << "cannot get Session* at pos " << pos << "Object is not of type Speaker*";
     }
-    return 0;
+    return nullptr;
 }
 void Speaker::clearSessionsProperty(QQmlListProperty<Session> *sessionsList)
 {
@@ -782,7 +782,7 @@ void Speaker::setConferences(QList<Conference*> conferences)
  */
 QQmlListProperty<Conference> Speaker::conferencesPropertyList()
 {
-    return QQmlListProperty<Conference>(this, 0, &Speaker::appendToConferencesProperty,
+    return QQmlListProperty<Conference>(this, nullptr, &Speaker::appendToConferencesProperty,
             &Speaker::conferencesPropertyCount, &Speaker::atConferencesProperty,
             &Speaker::clearConferencesProperty);
 }
@@ -819,7 +819,7 @@ Conference* Speaker::atConferencesProperty(QQmlListProperty<Conference> *confere
     } else {
         qWarning() << "cannot get Conference* at pos " << pos << "Object is not of type Speaker*";
     }
-    return 0;
+    return nullptr;
 }
 void Speaker::clearConferencesProperty(QQmlListProperty<Conference> *conferencesList)
 {

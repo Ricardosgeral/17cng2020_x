@@ -24,7 +24,7 @@ class SessionLists: public QObject
 	Q_PROPERTY(QQmlListProperty<Session> sameTimeSessionsPropertyList READ sameTimeSessionsPropertyList NOTIFY sameTimeSessionsPropertyListChanged)
 
 public:
-	SessionLists(QObject *parent = 0);
+    SessionLists(QObject *parent = nullptr);
 
 	Q_INVOKABLE
 	bool isAllResolved();

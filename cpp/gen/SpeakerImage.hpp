@@ -22,7 +22,7 @@ class SpeakerImage: public QObject
 
 
 public:
-	SpeakerImage(QObject *parent = 0);
+    SpeakerImage(QObject *parent = nullptr);
 
 
 	void fillFromMap(const QVariantMap& speakerImageMap);

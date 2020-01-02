@@ -37,6 +37,7 @@ class Session: public QObject
 	Q_PROPERTY(bool isBreak READ isBreak WRITE setIsBreak NOTIFY isBreakChanged FINAL)
 	Q_PROPERTY(bool isLunch READ isLunch WRITE setIsLunch NOTIFY isLunchChanged FINAL)
 	Q_PROPERTY(bool isEvent READ isEvent WRITE setIsEvent NOTIFY isEventChanged FINAL)
+    Q_PROPERTY(bool isTour READ isTour WRITE setIsTour NOTIFY isTourChanged FINAL)
 	Q_PROPERTY(bool isRegistration READ isRegistration WRITE setIsRegistration NOTIFY isRegistrationChanged FINAL)
 	Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged FINAL)
 	Q_PROPERTY(QString description READ description WRITE setDescription NOTIFY descriptionChanged FINAL)
@@ -59,7 +60,7 @@ class Session: public QObject
 	Q_PROPERTY(QQmlListProperty<SessionTrack> sessionTracksPropertyList READ sessionTracksPropertyList NOTIFY sessionTracksPropertyListChanged)
 
 public:
-	Session(QObject *parent = 0);
+    Session(QObject *parent = nullptr);  //estava 0 e mudei para nullptr como sugerido pelo qt
 
 	Q_INVOKABLE
 	bool isAllResolved();
@@ -107,6 +108,10 @@ public:
 	void setIsLunch(bool isLunch);
 	bool isEvent() const;
 	void setIsEvent(bool isEvent);
+
+    bool isTour() const;
+    void setIsTour(bool isTour);
+
 	bool isRegistration() const;
 	void setIsRegistration(bool isRegistration);
 	QString title() const;
@@ -275,6 +280,9 @@ public:
 	void isBreakChanged(bool isBreak);
 	void isLunchChanged(bool isLunch);
 	void isEventChanged(bool isEvent);
+
+    void isTourChanged(bool isTour);
+
 	void isRegistrationChanged(bool isRegistration);
 	void titleChanged(QString title);
 	void descriptionChanged(QString description);
@@ -317,6 +325,9 @@ private:
 	bool mIsBreak;
 	bool mIsLunch;
 	bool mIsEvent;
+
+    bool mIsTour;
+
 	bool mIsRegistration;
 	QString mTitle;
 	QString mDescription;

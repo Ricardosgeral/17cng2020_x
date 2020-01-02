@@ -20,7 +20,7 @@ Favorite::Favorite(QObject *parent) :
 {
 	// lazy references:
 	mSession = -1;
-	mSessionAsDataObject = 0;
+    mSessionAsDataObject = nullptr;
 	mSessionInvalid = false;
 }
 
@@ -173,7 +173,7 @@ void Favorite::setSession(int session)
         // remove old Data Object if one was resolved
         if (mSessionAsDataObject) {
             // reset pointer, don't delete the independent object !
-            mSessionAsDataObject = 0;
+            mSessionAsDataObject = nullptr;
         }
         // set the new lazy reference
         mSession = session;

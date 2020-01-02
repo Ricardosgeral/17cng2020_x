@@ -407,7 +407,7 @@ void Day::setSessions(QList<Session*> sessions)
  */
 QQmlListProperty<Session> Day::sessionsPropertyList()
 {
-    return QQmlListProperty<Session>(this, 0, &Day::appendToSessionsProperty,
+    return QQmlListProperty<Session>(this, nullptr, &Day::appendToSessionsProperty,
             &Day::sessionsPropertyCount, &Day::atSessionsProperty,
             &Day::clearSessionsProperty);
 }
@@ -444,7 +444,7 @@ Session* Day::atSessionsProperty(QQmlListProperty<Session> *sessionsList, int po
     } else {
         qWarning() << "cannot get Session* at pos " << pos << "Object is not of type Day*";
     }
-    return 0;
+    return nullptr;
 }
 void Day::clearSessionsProperty(QQmlListProperty<Session> *sessionsList)
 {

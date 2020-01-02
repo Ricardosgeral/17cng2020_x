@@ -17,7 +17,7 @@ class SessionTrackAPI: public QObject
 
 
 public:
-	SessionTrackAPI(QObject *parent = 0);
+    SessionTrackAPI(QObject *parent = nullptr);
 
 
 	void fillFromMap(const QVariantMap& sessionTrackAPIMap);

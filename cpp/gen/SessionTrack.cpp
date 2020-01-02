@@ -386,7 +386,7 @@ void SessionTrack::setSessions(QList<Session*> sessions)
  */
 QQmlListProperty<Session> SessionTrack::sessionsPropertyList()
 {
-    return QQmlListProperty<Session>(this, 0, &SessionTrack::appendToSessionsProperty,
+    return QQmlListProperty<Session>(this, nullptr, &SessionTrack::appendToSessionsProperty,
             &SessionTrack::sessionsPropertyCount, &SessionTrack::atSessionsProperty,
             &SessionTrack::clearSessionsProperty);
 }
@@ -423,7 +423,7 @@ Session* SessionTrack::atSessionsProperty(QQmlListProperty<Session> *sessionsLis
     } else {
         qWarning() << "cannot get Session* at pos " << pos << "Object is not of type SessionTrack*";
     }
-    return 0;
+    return nullptr;
 }
 void SessionTrack::clearSessionsProperty(QQmlListProperty<Session> *sessionsList)
 {

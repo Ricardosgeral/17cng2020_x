@@ -36,7 +36,7 @@ class SettingsData: public QObject
 
 
 public:
-	SettingsData(QObject *parent = 0);
+    SettingsData(QObject *parent = nullptr);
 
 
 	void fillFromMap(const QVariantMap& settingsDataMap);
