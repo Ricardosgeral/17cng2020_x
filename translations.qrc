@@ -8,5 +8,7 @@
         <file>translations/17cng2020_x_en.ts</file>
         <file>translations/17cng2020_x_fr.qm</file>
         <file>translations/17cng2020_x_fr.ts</file>
+        <file>translations/17cng2020_x_pt.ts</file>
+        <file>translations/17cng2020_x_pt.qm</file>
     </qresource>
 </RCC>
