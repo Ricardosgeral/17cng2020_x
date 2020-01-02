@@ -46,7 +46,7 @@ Popup {
                 Layout.fillWidth: true
             }
             ButtonFlat {
-                Layout.preferredWidth: 1
+                Layout.preferredWidth: 1.5
                 text: updatePopup.showUpdateButton? isAutoVersionCheckMode? qsTr("Later") : qsTr("Cancel") : qsTr("OK")
                 textColor: accentColor
                 onClicked: {
@@ -68,7 +68,7 @@ Popup {
             }
             ButtonFlat {
                 visible: updatePopup.showUpdateButton
-                Layout.preferredWidth: 1
+                Layout.preferredWidth: 1.5
                 text: qsTr("Update")
                 textColor: primaryColor
                 onClicked: {

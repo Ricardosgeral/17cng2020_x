@@ -78,7 +78,7 @@ Flickable {
             }
             HelpRow {
                 iconName: "refresh.png"
-                helpText: qsTr("App checks automatically if an Update is required. To start Schedule- and Speaker Updates manually please tap on the Refresh Button. This Button is only visible if you rejected Auto - Update")
+                helpText: qsTr("App checks automatically if an Update is required. To start Schedule- and Speaker Updates manually please tap on the Refresh Button. This Button is only visible if you rejected Auto - Update.")
             }
             LabelTitle {
                 leftPadding: 10
@@ -104,7 +104,7 @@ Flickable {
             }
             HelpRow {
                 iconName: "supervisor.png"
-                helpText: qsTr("List of all Speakers sorted by Last Name. This List contains Speakers from both Conferences (17CNG and 10CLBG)")
+                helpText: qsTr("List of all Speakers sorted by Last Name. This List contains Speakers from both Conferences (17CNG and 10CLBG).")
             }
             HelpRow {
                 iconName: "az.png"
@@ -157,7 +157,7 @@ Flickable {
             LabelSubheading {
                 leftPadding: 10
                 rightPadding: 16
-                text: qsTr("Need more help?\nemail me: ricardos@lnec.pt")
+                text: qsTr("Need more help?\nWant to report a bug or omission?\nWant your picture added/removed/changed\nemail me: ricardos@lnec.pt\n \nNote: The authors picture shown here was gathered from  Linkedin or Academic institutions sites.")
                 font.italic: true
                 wrapMode: Text.WordWrap
             }

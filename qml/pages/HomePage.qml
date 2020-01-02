@@ -60,23 +60,12 @@ ScrollView {
                 Layout.maximumWidth: homePage.availableWidth
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/homepage_app.png"
+
+
+
             }
 
         }
-
-        ButtonRaised {
-            width: parent.width
-            visible: true
-            id: gotosite
-            topPadding: 10
-            bottomPadding: 15
-            text: qsTr("Congress website")
-            font.bold: true
-            onClicked: {
-                Qt.openUrlExternally("http://17cng2020.lnec.pt")
-            }
-        }
-
 
 
 
@@ -99,7 +88,7 @@ ScrollView {
             Layout.fillWidth: true
             text: qsTr("Organization")
             color: primaryColor
-//            font.pixelSize: 20
+            //            font.pixelSize: 20
         }
 
 
@@ -112,6 +101,15 @@ ScrollView {
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/SPG_logo.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://www.spgeotecnia.pt/")
+                    }
+                }
+
+
             }
 
             Image{
@@ -120,6 +118,16 @@ ScrollView {
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/LNEC_logo.png"
+
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("http://www.lnec.pt/")
+                    }
+                }
+
+
             }
             Image{
                 Layout.maximumHeight:60
@@ -127,15 +135,19 @@ ScrollView {
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/ABMS_logo.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://www.abms.com.br")
+                    }
+                }
+
             }
         }
 
 
-
-                HorizontalDivider{Layout.fillWidth: true}
-
-
-
+        HorizontalDivider{Layout.fillWidth: true}
 
 
         LabelTitle{
@@ -156,7 +168,7 @@ ScrollView {
             Layout.fillWidth: true
             // set Layout.fillWidth for the elements inside the RowLayout to make them expand
             Image{
-                Layout.maximumHeight:70
+                Layout.maximumHeight:65
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/sponsors_types_diamond.png"
@@ -287,6 +299,21 @@ ScrollView {
 
 
         HorizontalDivider{Layout.fillWidth: true}
+
+        ButtonRaised {
+            width: parent.width/2
+            visible: true
+            id: gotosite
+            topPadding: 10
+            bottomPadding: 15
+            text: qsTr("Congress website")
+            font.bold: true
+            onClicked: {
+                Qt.openUrlExternally("http://17cng2020.lnec.pt")
+            }
+        }
+        HorizontalDivider{Layout.fillWidth: true}
+
 
     }// Column
 
