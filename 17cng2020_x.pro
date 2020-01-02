@@ -5,9 +5,9 @@ TARGET = 17cng2020_x
 
 QT += qml quick core network
 CONFIG += c++11
-
+#
 include(../statusbar/src/statusbar.pri)
-
+#
 HEADERS += \
     cpp/applicationui.hpp \
     cpp/uiconstants.hpp \
