@@ -2910,5 +2910,13 @@
         <file>images/extra/sponsors_types_prata.png</file>
         <file>images/extra/homepage_app.png</file>
         <file>images/extra/mapLNEC.png</file>
+        <file>images/extra/Logo_JETsj.png</file>
+        <file>images/extra/Logo_TPF.jpg</file>
+        <file>images/extra/Logo_Geoarea.jpg</file>
+        <file>images/extra/Logo_Geocontrolo.jpg</file>
+        <file>images/extra/Logo_Tecnilab.png</file>
+        <file>images/extra/Logo_Teixeiraduarte.png</file>
+        <file>images/extra/Logo_Geocontrolo.png</file>
+        <file>images/extra/Logo_TPF.png</file>
     </qresource>
 </RCC>

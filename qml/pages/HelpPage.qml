@@ -104,7 +104,7 @@ Flickable {
             }
             HelpRow {
                 iconName: "supervisor.png"
-                helpText: qsTr("List of all Speakers sorted by Last Name. This List contains Speakers from both Conferences (17CNG and 10CLBG).")
+                helpText: qsTr("List of all Speakers sorted by First Name. This List contains Speakers from both Conferences (17CNG and 10CLBG).")
             }
             HelpRow {
                 iconName: "az.png"
@@ -154,6 +154,16 @@ Flickable {
                 helpText: qsTr("Session Time from - to.")
             }
             HorizontalDivider {}
+
+            LabelSubheading {
+                leftPadding: 10
+                rightPadding: 16
+                text: qsTr("The language used in this app is that same of the device\nLanguages available:en, pt")
+                font.italic: true
+                wrapMode: Text.WordWrap
+            }
+            HorizontalDivider {}
+
             LabelSubheading {
                 leftPadding: 10
                 rightPadding: 16

@@ -14,7 +14,7 @@ const QString YYYY_MM_DD_HH_MM = "yyyy-MM-ddHH:mm";
 const QString DAYNAME = "dddd";
 const QString DAYNAME_HH_MM = "dddd, HH:mm";
 const QString DEFAULT_SPEAKER_IMAGE_URL = "https://s3-eu-west-1.amazonaws.com/qt-worldsummit/ws2016/uploads/2016/07/man-silhouette-black-gray.jpg";
-//"http://conf.qtcon.org/person_original.png";
+
 const QString EMPTY_TRACK = "*****";
 
 DataUtil::DataUtil(QObject *parent) : QObject(parent)
@@ -162,25 +162,22 @@ QString DataUtil::scheduleItemImageForSession(Session *session)
     if(session->isTour()) {
         return "bus.png";
     }
-
-
-
     return "break.png";
 }
 
 QString DataUtil::letterForButton(Session *session)
 {
     if(!session) {
-        return "C";  // apresentação de comunicação
+        return tr("A");  //C de comunicação quando for em pt
     }
-    if(session->isTraining()) {
-        return "T";
+    if(session->isTraining()) {  //Jovens geotecnicos
+        return "J";
     }
     if(session->isLightning()) {
         return "L";
     }
     if (session->isKeynote()) {
-        return "P";   //Palestra quando for em ingles colocar K
+        return tr("K");   //P de Palestra quando for em pt
     }
     if(session->isCommunity()) {
         return "X";
@@ -191,7 +188,7 @@ QString DataUtil::letterForButton(Session *session)
     if(session->isUnconference()) {
         return "U";
     }
-    return "C";
+    return tr("A");
 }
 
 QString DataUtil::textForSessionTrack(SessionTrack *sessionTrack)
@@ -227,16 +224,16 @@ QString DataUtil::textForSessionType(Session *session)
         return tr("Break")+info;
     }
     if(session->isTraining()) {
-        return tr("Training")+info;
+        return tr("Jovens Geotécnicos")+info;
     }
     if(session->isLightning()) {
-        return tr("Lightning Talk")+info;
+        return tr("Lição Victor de Mello")+info;
     }
     if(session->isKeynote()) {
-        return tr("Palestra")+info;  // mudar para Keynote
+        return tr("Palestra")+info;  // mudar para Palestra em pt
     }
     if(session->isCommunity()) {
-        return tr("Community")+info;
+        return tr("Prémio Teixeira Duarte")+info;
     }
     if(session->isUnconference()) {
         return tr("Unconference")+info;
@@ -244,7 +241,7 @@ QString DataUtil::textForSessionType(Session *session)
     if(session->isMeeting()) {
         return tr("Meeting")+info;
     }
-    return tr("Article")+info;
+    return tr("Article")+info;   // Comunicação em pt
 }
 
 QString DataUtil::trackColorFirstTrack(Session *session)
@@ -800,7 +797,7 @@ void DataUtil::setType(Session* session) {
     session->resolveSessionTracksKeys(mDataManager->listOfSessionTrackForKeys(session->sessionTracksKeys()));
     for (int i = 0; i < session->sessionTracks().size(); ++i) {
         SessionTrack* sessionTrack = session->sessionTracks().at(i);
-        if (sessionTrack->name() == "Palestra") {
+        if (sessionTrack->name() == "Keynote" || sessionTrack->name() =="_Palestra - Sessão Plenária") {
             session->setIsKeynote(true);
             return;
         }
@@ -901,11 +898,12 @@ void DataUtil::calcSpeakerName(Speaker* speaker, SpeakerAPI* speakerAPI) {
         speaker->setName(speaker->name()+" ");
     }
     speaker->setName(speaker->name()+speakerAPI->lastName());
-    if(speaker->name().length() > 0) {
-        if(speakerAPI->lastName().length() > 0) {
-            speaker->setSortKey(speakerAPI->lastName().left(5).toUpper());
+    if(speaker->name().length() > 0) {// RIC mudei para ficar ordenado pelo primeiro nome
+
+        if(speaker->name().length() > 0) {
+            speaker->setSortKey(speaker->name().left(7).toUpper());
         } else {
-            speaker->setSortKey(speakerAPI->firstName().left(5).toUpper());
+            speaker->setSortKey(speakerAPI->lastName().left(7).toUpper());
         }
         speaker->setSortGroup(speaker->sortKey().left(1));
     } else {
@@ -1081,7 +1079,7 @@ bool DataUtil::updateSessions(const int conferenceId) {
     if(conferenceId == 201901) {
         city = "Lisboa";
     } else {
-        city = tr("Lisboa2");
+        city = tr("Lisboa");
     }
     mProgressInfotext.append("\n").append(tr("Sync Sessions ")).append(city);
 
@@ -1290,9 +1288,13 @@ bool DataUtil::updateSessions(const int conferenceId) {
                 // SessionLinks
 
                 // SORT
+
                 session->setSortKey(day->conferenceDay().toString(YYYY_MM_DD)+session->startTime().toString(HH_MM));
                 mMultiSession.insert(session->sortKey(), session);
+
+
             } // end for sessions of a room of a day
+
         } // end for rooms of a day
     } // end for list of days from server
 
@@ -1825,6 +1827,9 @@ void DataUtil::finishUpdate() {
     qDebug() << "FINISH: All Done";
     emit updateDone();
 }
+
+
+
 
 //  U T I L I T Y S  to manage Conference data
 

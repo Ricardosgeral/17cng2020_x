@@ -251,7 +251,7 @@ Page {
                     visible: session.presenterPropertyList.length
                     leftPadding: 16
                     font.italic: true
-                    text: qsTr("Tap on the Author to get the Details.")
+                    text: qsTr("Tap on the Author to get the Details. Authors sorted by alfabethical order!")
                     wrapMode: Text.WordWrap
                 }
                 HorizontalListDivider{

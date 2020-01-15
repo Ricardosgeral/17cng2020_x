@@ -365,7 +365,7 @@ void Room::setSessions(QList<Session*> sessions)
  */
 QQmlListProperty<Session> Room::sessionsPropertyList()
 {
-    return QQmlListProperty<Session>(this, 0, &Room::appendToSessionsProperty,
+    return QQmlListProperty<Session>(this, nullptr, &Room::appendToSessionsProperty,
             &Room::sessionsPropertyCount, &Room::atSessionsProperty,
             &Room::clearSessionsProperty);
 }
@@ -402,7 +402,7 @@ Session* Room::atSessionsProperty(QQmlListProperty<Session> *sessionsList, int p
     } else {
         qWarning() << "cannot get Session* at pos " << pos << "Object is not of type Room*";
     }
-    return 0;
+    return nullptr;
 }
 void Room::clearSessionsProperty(QQmlListProperty<Session> *sessionsList)
 {

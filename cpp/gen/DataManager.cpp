@@ -249,7 +249,7 @@ void DataManager::undoCreateSettingsData(SettingsData* settingsData)
     if (settingsData) {
         // qDebug() << "undoCreateSettingsData " << settingsData->id();
         settingsData->deleteLater();
-        settingsData = 0;
+        settingsData = nullptr;
     }
 }
 
@@ -350,7 +350,7 @@ QList<QObject*> DataManager::allConference()
 
 QQmlListProperty<Conference> DataManager::conferencePropertyList()
 {
-    return QQmlListProperty<Conference>(this, 0,
+    return QQmlListProperty<Conference>(this, nullptr,
             &DataManager::appendToConferenceProperty, &DataManager::conferencePropertyCount,
             &DataManager::atConferenceProperty, &DataManager::clearConferenceProperty);
 }
@@ -396,7 +396,7 @@ Conference* DataManager::atConferenceProperty(
         qWarning() << "cannot get Conference* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearConferenceProperty(
         QQmlListProperty<Conference> *conferenceList)
@@ -409,7 +409,7 @@ void DataManager::clearConferenceProperty(
 			emit dataManager->deletedFromAllConferenceById(conference->id());
 			emit dataManager->deletedFromAllConference(conference);
             conference->deleteLater();
-            conference = 0;
+            conference = nullptr;
         }
         dataManager->mAllConference.clear();
     } else {
@@ -430,7 +430,7 @@ void DataManager::deleteConference()
 		emit deletedFromAllConference(conference);
 		emit conferencePropertyListChanged();
         conference->deleteLater();
-        conference = 0;
+        conference = nullptr;
      }
      mAllConference.clear();
 }
@@ -461,7 +461,7 @@ void DataManager::undoCreateConference(Conference* conference)
     if (conference) {
         // qDebug() << "undoCreateConference " << conference->id();
         conference->deleteLater();
-        conference = 0;
+        conference = nullptr;
     }
 }
 
@@ -500,7 +500,7 @@ bool DataManager::deleteConference(Conference* conference)
     emit deletedFromAllConference(conference);
     emit conferencePropertyListChanged();
     conference->deleteLater();
-    conference = 0;
+    conference = nullptr;
     return ok;
 }
 
@@ -516,7 +516,7 @@ bool DataManager::deleteConferenceById(const int& id)
             emit deletedFromAllConference(conference);
             emit conferencePropertyListChanged();
             conference->deleteLater();
-            conference = 0;
+            conference = nullptr;
             return true;
         }
     }
@@ -534,7 +534,7 @@ Conference* DataManager::findConferenceById(const int& id){
         }
     }
     qDebug() << "no Conference found for id " << id;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -631,7 +631,7 @@ QList<QObject*> DataManager::allRoom()
 
 QQmlListProperty<Room> DataManager::roomPropertyList()
 {
-    return QQmlListProperty<Room>(this, 0,
+    return QQmlListProperty<Room>(this, nullptr,
             &DataManager::appendToRoomProperty, &DataManager::roomPropertyCount,
             &DataManager::atRoomProperty, &DataManager::clearRoomProperty);
 }
@@ -677,7 +677,7 @@ Room* DataManager::atRoomProperty(
         qWarning() << "cannot get Room* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearRoomProperty(
         QQmlListProperty<Room> *roomList)
@@ -690,7 +690,7 @@ void DataManager::clearRoomProperty(
 			emit dataManager->deletedFromAllRoomByRoomId(room->roomId());
 			emit dataManager->deletedFromAllRoom(room);
             room->deleteLater();
-            room = 0;
+            room = nullptr;
         }
         dataManager->mAllRoom.clear();
     } else {
@@ -711,7 +711,7 @@ void DataManager::deleteRoom()
 		emit deletedFromAllRoom(room);
 		emit roomPropertyListChanged();
         room->deleteLater();
-        room = 0;
+        room = nullptr;
      }
      mAllRoom.clear();
 }
@@ -742,7 +742,7 @@ void DataManager::undoCreateRoom(Room* room)
     if (room) {
         // qDebug() << "undoCreateRoom " << room->roomId();
         room->deleteLater();
-        room = 0;
+        room = nullptr;
     }
 }
 
@@ -781,7 +781,7 @@ bool DataManager::deleteRoom(Room* room)
     emit deletedFromAllRoom(room);
     emit roomPropertyListChanged();
     room->deleteLater();
-    room = 0;
+    room = nullptr;
     return ok;
 }
 
@@ -797,7 +797,7 @@ bool DataManager::deleteRoomByRoomId(const int& roomId)
             emit deletedFromAllRoom(room);
             emit roomPropertyListChanged();
             room->deleteLater();
-            room = 0;
+            room = nullptr;
             return true;
         }
     }
@@ -815,7 +815,7 @@ Room* DataManager::findRoomByRoomId(const int& roomId){
         }
     }
     qDebug() << "no Room found for roomId " << roomId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -961,7 +961,7 @@ QList<QObject*> DataManager::allSession()
 
 QQmlListProperty<Session> DataManager::sessionPropertyList()
 {
-    return QQmlListProperty<Session>(this, 0,
+    return QQmlListProperty<Session>(this, nullptr,
             &DataManager::appendToSessionProperty, &DataManager::sessionPropertyCount,
             &DataManager::atSessionProperty, &DataManager::clearSessionProperty);
 }
@@ -1007,7 +1007,7 @@ Session* DataManager::atSessionProperty(
         qWarning() << "cannot get Session* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSessionProperty(
         QQmlListProperty<Session> *sessionList)
@@ -1020,7 +1020,7 @@ void DataManager::clearSessionProperty(
 			emit dataManager->deletedFromAllSessionBySessionId(session->sessionId());
 			emit dataManager->deletedFromAllSession(session);
             session->deleteLater();
-            session = 0;
+            session = nullptr;
         }
         dataManager->mAllSession.clear();
     } else {
@@ -1041,7 +1041,7 @@ void DataManager::deleteSession()
 		emit deletedFromAllSession(session);
 		emit sessionPropertyListChanged();
         session->deleteLater();
-        session = 0;
+        session = nullptr;
      }
      mAllSession.clear();
 }
@@ -1072,7 +1072,7 @@ void DataManager::undoCreateSession(Session* session)
     if (session) {
         // qDebug() << "undoCreateSession " << session->sessionId();
         session->deleteLater();
-        session = 0;
+        session = nullptr;
     }
 }
 
@@ -1111,7 +1111,7 @@ bool DataManager::deleteSession(Session* session)
     emit deletedFromAllSession(session);
     emit sessionPropertyListChanged();
     session->deleteLater();
-    session = 0;
+    session = nullptr;
     return ok;
 }
 
@@ -1127,7 +1127,7 @@ bool DataManager::deleteSessionBySessionId(const int& sessionId)
             emit deletedFromAllSession(session);
             emit sessionPropertyListChanged();
             session->deleteLater();
-            session = 0;
+            session = nullptr;
             return true;
         }
     }
@@ -1145,7 +1145,7 @@ Session* DataManager::findSessionBySessionId(const int& sessionId){
         }
     }
     qDebug() << "no Session found for sessionId " << sessionId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -1272,7 +1272,7 @@ QList<QObject*> DataManager::allFavorite()
 
 QQmlListProperty<Favorite> DataManager::favoritePropertyList()
 {
-    return QQmlListProperty<Favorite>(this, 0,
+    return QQmlListProperty<Favorite>(this, nullptr,
             &DataManager::appendToFavoriteProperty, &DataManager::favoritePropertyCount,
             &DataManager::atFavoriteProperty, &DataManager::clearFavoriteProperty);
 }
@@ -1318,7 +1318,7 @@ Favorite* DataManager::atFavoriteProperty(
         qWarning() << "cannot get Favorite* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearFavoriteProperty(
         QQmlListProperty<Favorite> *favoriteList)
@@ -1331,7 +1331,7 @@ void DataManager::clearFavoriteProperty(
 			emit dataManager->deletedFromAllFavoriteBySessionId(favorite->sessionId());
 			emit dataManager->deletedFromAllFavorite(favorite);
             favorite->deleteLater();
-            favorite = 0;
+            favorite = nullptr;
         }
         dataManager->mAllFavorite.clear();
     } else {
@@ -1352,7 +1352,7 @@ void DataManager::deleteFavorite()
 		emit deletedFromAllFavorite(favorite);
 		emit favoritePropertyListChanged();
         favorite->deleteLater();
-        favorite = 0;
+        favorite = nullptr;
      }
      mAllFavorite.clear();
 }
@@ -1383,7 +1383,7 @@ void DataManager::undoCreateFavorite(Favorite* favorite)
     if (favorite) {
         // qDebug() << "undoCreateFavorite " << favorite->sessionId();
         favorite->deleteLater();
-        favorite = 0;
+        favorite = nullptr;
     }
 }
 
@@ -1422,7 +1422,7 @@ bool DataManager::deleteFavorite(Favorite* favorite)
     emit deletedFromAllFavorite(favorite);
     emit favoritePropertyListChanged();
     favorite->deleteLater();
-    favorite = 0;
+    favorite = nullptr;
     return ok;
 }
 
@@ -1438,7 +1438,7 @@ bool DataManager::deleteFavoriteBySessionId(const int& sessionId)
             emit deletedFromAllFavorite(favorite);
             emit favoritePropertyListChanged();
             favorite->deleteLater();
-            favorite = 0;
+            favorite = nullptr;
             return true;
         }
     }
@@ -1456,7 +1456,7 @@ Favorite* DataManager::findFavoriteBySessionId(const int& sessionId){
         }
     }
     qDebug() << "no Favorite found for sessionId " << sessionId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -1553,7 +1553,7 @@ QList<QObject*> DataManager::allSessionLists()
 
 QQmlListProperty<SessionLists> DataManager::sessionListsPropertyList()
 {
-    return QQmlListProperty<SessionLists>(this, 0,
+    return QQmlListProperty<SessionLists>(this, nullptr,
             &DataManager::appendToSessionListsProperty, &DataManager::sessionListsPropertyCount,
             &DataManager::atSessionListsProperty, &DataManager::clearSessionListsProperty);
 }
@@ -1599,7 +1599,7 @@ SessionLists* DataManager::atSessionListsProperty(
         qWarning() << "cannot get SessionLists* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSessionListsProperty(
         QQmlListProperty<SessionLists> *sessionListsList)
@@ -1612,7 +1612,7 @@ void DataManager::clearSessionListsProperty(
 			emit dataManager->deletedFromAllSessionListsByUuid(sessionLists->uuid());
 			emit dataManager->deletedFromAllSessionLists(sessionLists);
             sessionLists->deleteLater();
-            sessionLists = 0;
+            sessionLists = nullptr;
         }
         dataManager->mAllSessionLists.clear();
     } else {
@@ -1633,7 +1633,7 @@ void DataManager::deleteSessionLists()
 		emit deletedFromAllSessionLists(sessionLists);
 		emit sessionListsPropertyListChanged();
         sessionLists->deleteLater();
-        sessionLists = 0;
+        sessionLists = nullptr;
      }
      mAllSessionLists.clear();
 }
@@ -1664,7 +1664,7 @@ void DataManager::undoCreateSessionLists(SessionLists* sessionLists)
     if (sessionLists) {
         // qDebug() << "undoCreateSessionLists " << sessionLists->uuid();
         sessionLists->deleteLater();
-        sessionLists = 0;
+        sessionLists = nullptr;
     }
 }
 
@@ -1703,7 +1703,7 @@ bool DataManager::deleteSessionLists(SessionLists* sessionLists)
     emit deletedFromAllSessionLists(sessionLists);
     emit sessionListsPropertyListChanged();
     sessionLists->deleteLater();
-    sessionLists = 0;
+    sessionLists = nullptr;
     return ok;
 }
 
@@ -1722,7 +1722,7 @@ bool DataManager::deleteSessionListsByUuid(const QString& uuid)
             emit deletedFromAllSessionLists(sessionLists);
             emit sessionListsPropertyListChanged();
             sessionLists->deleteLater();
-            sessionLists = 0;
+            sessionLists = nullptr;
             return true;
         }
     }
@@ -1733,7 +1733,7 @@ bool DataManager::deleteSessionListsByUuid(const QString& uuid)
 SessionLists* DataManager::findSessionListsByUuid(const QString& uuid){
     if (uuid.isNull() || uuid.isEmpty()) {
         qDebug() << "cannot find SessionLists from empty uuid";
-        return 0;
+        return nullptr;
     }
     for (int i = 0; i < mAllSessionLists.size(); ++i) {
         SessionLists* sessionLists;
@@ -1743,7 +1743,7 @@ SessionLists* DataManager::findSessionListsByUuid(const QString& uuid){
         }
     }
     qDebug() << "no SessionLists found for uuid " << uuid;
-    return 0;
+    return nullptr;
 }
 
 
@@ -1880,7 +1880,7 @@ QList<QObject*> DataManager::allSpeaker()
 
 QQmlListProperty<Speaker> DataManager::speakerPropertyList()
 {
-    return QQmlListProperty<Speaker>(this, 0,
+    return QQmlListProperty<Speaker>(this, nullptr,
             &DataManager::appendToSpeakerProperty, &DataManager::speakerPropertyCount,
             &DataManager::atSpeakerProperty, &DataManager::clearSpeakerProperty);
 }
@@ -1926,7 +1926,7 @@ Speaker* DataManager::atSpeakerProperty(
         qWarning() << "cannot get Speaker* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSpeakerProperty(
         QQmlListProperty<Speaker> *speakerList)
@@ -1939,7 +1939,7 @@ void DataManager::clearSpeakerProperty(
 			emit dataManager->deletedFromAllSpeakerBySpeakerId(speaker->speakerId());
 			emit dataManager->deletedFromAllSpeaker(speaker);
             speaker->deleteLater();
-            speaker = 0;
+            speaker = nullptr;
         }
         dataManager->mAllSpeaker.clear();
     } else {
@@ -1960,7 +1960,7 @@ void DataManager::deleteSpeaker()
 		emit deletedFromAllSpeaker(speaker);
 		emit speakerPropertyListChanged();
         speaker->deleteLater();
-        speaker = 0;
+        speaker = nullptr;
      }
      mAllSpeaker.clear();
 }
@@ -1991,7 +1991,7 @@ void DataManager::undoCreateSpeaker(Speaker* speaker)
     if (speaker) {
         // qDebug() << "undoCreateSpeaker " << speaker->speakerId();
         speaker->deleteLater();
-        speaker = 0;
+        speaker = nullptr;
     }
 }
 
@@ -2030,7 +2030,7 @@ bool DataManager::deleteSpeaker(Speaker* speaker)
     emit deletedFromAllSpeaker(speaker);
     emit speakerPropertyListChanged();
     speaker->deleteLater();
-    speaker = 0;
+    speaker = nullptr;
     return ok;
 }
 
@@ -2046,7 +2046,7 @@ bool DataManager::deleteSpeakerBySpeakerId(const int& speakerId)
             emit deletedFromAllSpeaker(speaker);
             emit speakerPropertyListChanged();
             speaker->deleteLater();
-            speaker = 0;
+            speaker = nullptr;
             return true;
         }
     }
@@ -2064,7 +2064,7 @@ Speaker* DataManager::findSpeakerBySpeakerId(const int& speakerId){
         }
     }
     qDebug() << "no Speaker found for speakerId " << speakerId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -2161,7 +2161,7 @@ QList<QObject*> DataManager::allSpeakerImage()
 
 QQmlListProperty<SpeakerImage> DataManager::speakerImagePropertyList()
 {
-    return QQmlListProperty<SpeakerImage>(this, 0,
+    return QQmlListProperty<SpeakerImage>(this, nullptr,
             &DataManager::appendToSpeakerImageProperty, &DataManager::speakerImagePropertyCount,
             &DataManager::atSpeakerImageProperty, &DataManager::clearSpeakerImageProperty);
 }
@@ -2207,7 +2207,7 @@ SpeakerImage* DataManager::atSpeakerImageProperty(
         qWarning() << "cannot get SpeakerImage* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSpeakerImageProperty(
         QQmlListProperty<SpeakerImage> *speakerImageList)
@@ -2220,7 +2220,7 @@ void DataManager::clearSpeakerImageProperty(
 			emit dataManager->deletedFromAllSpeakerImageBySpeakerId(speakerImage->speakerId());
 			emit dataManager->deletedFromAllSpeakerImage(speakerImage);
             speakerImage->deleteLater();
-            speakerImage = 0;
+            speakerImage = nullptr;
         }
         dataManager->mAllSpeakerImage.clear();
     } else {
@@ -2241,7 +2241,7 @@ void DataManager::deleteSpeakerImage()
 		emit deletedFromAllSpeakerImage(speakerImage);
 		emit speakerImagePropertyListChanged();
         speakerImage->deleteLater();
-        speakerImage = 0;
+        speakerImage = nullptr;
      }
      mAllSpeakerImage.clear();
 }
@@ -2272,7 +2272,7 @@ void DataManager::undoCreateSpeakerImage(SpeakerImage* speakerImage)
     if (speakerImage) {
         // qDebug() << "undoCreateSpeakerImage " << speakerImage->speakerId();
         speakerImage->deleteLater();
-        speakerImage = 0;
+        speakerImage = nullptr;
     }
 }
 
@@ -2311,7 +2311,7 @@ bool DataManager::deleteSpeakerImage(SpeakerImage* speakerImage)
     emit deletedFromAllSpeakerImage(speakerImage);
     emit speakerImagePropertyListChanged();
     speakerImage->deleteLater();
-    speakerImage = 0;
+    speakerImage = nullptr;
     return ok;
 }
 
@@ -2327,7 +2327,7 @@ bool DataManager::deleteSpeakerImageBySpeakerId(const int& speakerId)
             emit deletedFromAllSpeakerImage(speakerImage);
             emit speakerImagePropertyListChanged();
             speakerImage->deleteLater();
-            speakerImage = 0;
+            speakerImage = nullptr;
             return true;
         }
     }
@@ -2345,7 +2345,7 @@ SpeakerImage* DataManager::findSpeakerImageBySpeakerId(const int& speakerId){
         }
     }
     qDebug() << "no SpeakerImage found for speakerId " << speakerId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -2442,7 +2442,7 @@ QList<QObject*> DataManager::allSessionTrack()
 
 QQmlListProperty<SessionTrack> DataManager::sessionTrackPropertyList()
 {
-    return QQmlListProperty<SessionTrack>(this, 0,
+    return QQmlListProperty<SessionTrack>(this, nullptr,
             &DataManager::appendToSessionTrackProperty, &DataManager::sessionTrackPropertyCount,
             &DataManager::atSessionTrackProperty, &DataManager::clearSessionTrackProperty);
 }
@@ -2488,7 +2488,7 @@ SessionTrack* DataManager::atSessionTrackProperty(
         qWarning() << "cannot get SessionTrack* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSessionTrackProperty(
         QQmlListProperty<SessionTrack> *sessionTrackList)
@@ -2501,7 +2501,7 @@ void DataManager::clearSessionTrackProperty(
 			emit dataManager->deletedFromAllSessionTrackByTrackId(sessionTrack->trackId());
 			emit dataManager->deletedFromAllSessionTrack(sessionTrack);
             sessionTrack->deleteLater();
-            sessionTrack = 0;
+            sessionTrack = nullptr;
         }
         dataManager->mAllSessionTrack.clear();
     } else {
@@ -2522,7 +2522,7 @@ void DataManager::deleteSessionTrack()
 		emit deletedFromAllSessionTrack(sessionTrack);
 		emit sessionTrackPropertyListChanged();
         sessionTrack->deleteLater();
-        sessionTrack = 0;
+        sessionTrack = nullptr;
      }
      mAllSessionTrack.clear();
 }
@@ -2553,7 +2553,7 @@ void DataManager::undoCreateSessionTrack(SessionTrack* sessionTrack)
     if (sessionTrack) {
         // qDebug() << "undoCreateSessionTrack " << sessionTrack->trackId();
         sessionTrack->deleteLater();
-        sessionTrack = 0;
+        sessionTrack = nullptr;
     }
 }
 
@@ -2592,7 +2592,7 @@ bool DataManager::deleteSessionTrack(SessionTrack* sessionTrack)
     emit deletedFromAllSessionTrack(sessionTrack);
     emit sessionTrackPropertyListChanged();
     sessionTrack->deleteLater();
-    sessionTrack = 0;
+    sessionTrack = nullptr;
     return ok;
 }
 
@@ -2608,7 +2608,7 @@ bool DataManager::deleteSessionTrackByTrackId(const int& trackId)
             emit deletedFromAllSessionTrack(sessionTrack);
             emit sessionTrackPropertyListChanged();
             sessionTrack->deleteLater();
-            sessionTrack = 0;
+            sessionTrack = nullptr;
             return true;
         }
     }
@@ -2626,7 +2626,7 @@ SessionTrack* DataManager::findSessionTrackByTrackId(const int& trackId){
         }
     }
     qDebug() << "no SessionTrack found for trackId " << trackId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -2723,7 +2723,7 @@ QList<QObject*> DataManager::allDay()
 
 QQmlListProperty<Day> DataManager::dayPropertyList()
 {
-    return QQmlListProperty<Day>(this, 0,
+    return QQmlListProperty<Day>(this, nullptr,
             &DataManager::appendToDayProperty, &DataManager::dayPropertyCount,
             &DataManager::atDayProperty, &DataManager::clearDayProperty);
 }
@@ -2769,7 +2769,7 @@ Day* DataManager::atDayProperty(
         qWarning() << "cannot get Day* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearDayProperty(
         QQmlListProperty<Day> *dayList)
@@ -2782,7 +2782,7 @@ void DataManager::clearDayProperty(
 			emit dataManager->deletedFromAllDayById(day->id());
 			emit dataManager->deletedFromAllDay(day);
             day->deleteLater();
-            day = 0;
+            day = nullptr;
         }
         dataManager->mAllDay.clear();
     } else {
@@ -2803,7 +2803,7 @@ void DataManager::deleteDay()
 		emit deletedFromAllDay(day);
 		emit dayPropertyListChanged();
         day->deleteLater();
-        day = 0;
+        day = nullptr;
      }
      mAllDay.clear();
 }
@@ -2834,7 +2834,7 @@ void DataManager::undoCreateDay(Day* day)
     if (day) {
         // qDebug() << "undoCreateDay " << day->id();
         day->deleteLater();
-        day = 0;
+        day = nullptr;
     }
 }
 
@@ -2873,7 +2873,7 @@ bool DataManager::deleteDay(Day* day)
     emit deletedFromAllDay(day);
     emit dayPropertyListChanged();
     day->deleteLater();
-    day = 0;
+    day = nullptr;
     return ok;
 }
 
@@ -2889,7 +2889,7 @@ bool DataManager::deleteDayById(const int& id)
             emit deletedFromAllDay(day);
             emit dayPropertyListChanged();
             day->deleteLater();
-            day = 0;
+            day = nullptr;
             return true;
         }
     }
@@ -2907,7 +2907,7 @@ Day* DataManager::findDayById(const int& id){
         }
     }
     qDebug() << "no Day found for id " << id;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -3004,7 +3004,7 @@ QList<QObject*> DataManager::allSessionAPI()
 
 QQmlListProperty<SessionAPI> DataManager::sessionAPIPropertyList()
 {
-    return QQmlListProperty<SessionAPI>(this, 0,
+    return QQmlListProperty<SessionAPI>(this, nullptr,
             &DataManager::appendToSessionAPIProperty, &DataManager::sessionAPIPropertyCount,
             &DataManager::atSessionAPIProperty, &DataManager::clearSessionAPIProperty);
 }
@@ -3050,7 +3050,7 @@ SessionAPI* DataManager::atSessionAPIProperty(
         qWarning() << "cannot get SessionAPI* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSessionAPIProperty(
         QQmlListProperty<SessionAPI> *sessionAPIList)
@@ -3063,7 +3063,7 @@ void DataManager::clearSessionAPIProperty(
 			emit dataManager->deletedFromAllSessionAPIBySessionId(sessionAPI->sessionId());
 			emit dataManager->deletedFromAllSessionAPI(sessionAPI);
             sessionAPI->deleteLater();
-            sessionAPI = 0;
+            sessionAPI = nullptr;
         }
         dataManager->mAllSessionAPI.clear();
     } else {
@@ -3084,7 +3084,7 @@ void DataManager::deleteSessionAPI()
 		emit deletedFromAllSessionAPI(sessionAPI);
 		emit sessionAPIPropertyListChanged();
         sessionAPI->deleteLater();
-        sessionAPI = 0;
+        sessionAPI = nullptr;
      }
      mAllSessionAPI.clear();
 }
@@ -3115,7 +3115,7 @@ void DataManager::undoCreateSessionAPI(SessionAPI* sessionAPI)
     if (sessionAPI) {
         // qDebug() << "undoCreateSessionAPI " << sessionAPI->sessionId();
         sessionAPI->deleteLater();
-        sessionAPI = 0;
+        sessionAPI = nullptr;
     }
 }
 
@@ -3154,7 +3154,7 @@ bool DataManager::deleteSessionAPI(SessionAPI* sessionAPI)
     emit deletedFromAllSessionAPI(sessionAPI);
     emit sessionAPIPropertyListChanged();
     sessionAPI->deleteLater();
-    sessionAPI = 0;
+    sessionAPI = nullptr;
     return ok;
 }
 
@@ -3170,7 +3170,7 @@ bool DataManager::deleteSessionAPIBySessionId(const int& sessionId)
             emit deletedFromAllSessionAPI(sessionAPI);
             emit sessionAPIPropertyListChanged();
             sessionAPI->deleteLater();
-            sessionAPI = 0;
+            sessionAPI = nullptr;
             return true;
         }
     }
@@ -3188,7 +3188,7 @@ SessionAPI* DataManager::findSessionAPIBySessionId(const int& sessionId){
         }
     }
     qDebug() << "no SessionAPI found for sessionId " << sessionId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -3285,7 +3285,7 @@ QList<QObject*> DataManager::allPersonsAPI()
 
 QQmlListProperty<PersonsAPI> DataManager::personsAPIPropertyList()
 {
-    return QQmlListProperty<PersonsAPI>(this, 0,
+    return QQmlListProperty<PersonsAPI>(this, nullptr,
             &DataManager::appendToPersonsAPIProperty, &DataManager::personsAPIPropertyCount,
             &DataManager::atPersonsAPIProperty, &DataManager::clearPersonsAPIProperty);
 }
@@ -3331,7 +3331,7 @@ PersonsAPI* DataManager::atPersonsAPIProperty(
         qWarning() << "cannot get PersonsAPI* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearPersonsAPIProperty(
         QQmlListProperty<PersonsAPI> *personsAPIList)
@@ -3344,7 +3344,7 @@ void DataManager::clearPersonsAPIProperty(
 			emit dataManager->deletedFromAllPersonsAPIBySpeakerId(personsAPI->speakerId());
 			emit dataManager->deletedFromAllPersonsAPI(personsAPI);
             personsAPI->deleteLater();
-            personsAPI = 0;
+            personsAPI = nullptr;
         }
         dataManager->mAllPersonsAPI.clear();
     } else {
@@ -3365,7 +3365,7 @@ void DataManager::deletePersonsAPI()
 		emit deletedFromAllPersonsAPI(personsAPI);
 		emit personsAPIPropertyListChanged();
         personsAPI->deleteLater();
-        personsAPI = 0;
+        personsAPI = nullptr;
      }
      mAllPersonsAPI.clear();
 }
@@ -3396,7 +3396,7 @@ void DataManager::undoCreatePersonsAPI(PersonsAPI* personsAPI)
     if (personsAPI) {
         // qDebug() << "undoCreatePersonsAPI " << personsAPI->speakerId();
         personsAPI->deleteLater();
-        personsAPI = 0;
+        personsAPI = nullptr;
     }
 }
 
@@ -3435,7 +3435,7 @@ bool DataManager::deletePersonsAPI(PersonsAPI* personsAPI)
     emit deletedFromAllPersonsAPI(personsAPI);
     emit personsAPIPropertyListChanged();
     personsAPI->deleteLater();
-    personsAPI = 0;
+    personsAPI = nullptr;
     return ok;
 }
 
@@ -3451,7 +3451,7 @@ bool DataManager::deletePersonsAPIBySpeakerId(const int& speakerId)
             emit deletedFromAllPersonsAPI(personsAPI);
             emit personsAPIPropertyListChanged();
             personsAPI->deleteLater();
-            personsAPI = 0;
+            personsAPI = nullptr;
             return true;
         }
     }
@@ -3469,7 +3469,7 @@ PersonsAPI* DataManager::findPersonsAPIBySpeakerId(const int& speakerId){
         }
     }
     qDebug() << "no PersonsAPI found for speakerId " << speakerId;
-    return 0;
+    return nullptr;
 }
 
 /*
@@ -3566,7 +3566,7 @@ QList<QObject*> DataManager::allSessionTrackAPI()
 
 QQmlListProperty<SessionTrackAPI> DataManager::sessionTrackAPIPropertyList()
 {
-    return QQmlListProperty<SessionTrackAPI>(this, 0,
+    return QQmlListProperty<SessionTrackAPI>(this, nullptr,
             &DataManager::appendToSessionTrackAPIProperty, &DataManager::sessionTrackAPIPropertyCount,
             &DataManager::atSessionTrackAPIProperty, &DataManager::clearSessionTrackAPIProperty);
 }
@@ -3612,7 +3612,7 @@ SessionTrackAPI* DataManager::atSessionTrackAPIProperty(
         qWarning() << "cannot get SessionTrackAPI* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSessionTrackAPIProperty(
         QQmlListProperty<SessionTrackAPI> *sessionTrackAPIList)
@@ -3625,7 +3625,7 @@ void DataManager::clearSessionTrackAPIProperty(
 			emit dataManager->deletedFromAllSessionTrackAPIByUuid(sessionTrackAPI->uuid());
 			emit dataManager->deletedFromAllSessionTrackAPI(sessionTrackAPI);
             sessionTrackAPI->deleteLater();
-            sessionTrackAPI = 0;
+            sessionTrackAPI = nullptr;
         }
         dataManager->mAllSessionTrackAPI.clear();
     } else {
@@ -3646,7 +3646,7 @@ void DataManager::deleteSessionTrackAPI()
 		emit deletedFromAllSessionTrackAPI(sessionTrackAPI);
 		emit sessionTrackAPIPropertyListChanged();
         sessionTrackAPI->deleteLater();
-        sessionTrackAPI = 0;
+        sessionTrackAPI = nullptr;
      }
      mAllSessionTrackAPI.clear();
 }
@@ -3677,7 +3677,7 @@ void DataManager::undoCreateSessionTrackAPI(SessionTrackAPI* sessionTrackAPI)
     if (sessionTrackAPI) {
         // qDebug() << "undoCreateSessionTrackAPI " << sessionTrackAPI->uuid();
         sessionTrackAPI->deleteLater();
-        sessionTrackAPI = 0;
+        sessionTrackAPI = nullptr;
     }
 }
 
@@ -3716,7 +3716,7 @@ bool DataManager::deleteSessionTrackAPI(SessionTrackAPI* sessionTrackAPI)
     emit deletedFromAllSessionTrackAPI(sessionTrackAPI);
     emit sessionTrackAPIPropertyListChanged();
     sessionTrackAPI->deleteLater();
-    sessionTrackAPI = 0;
+    sessionTrackAPI = nullptr;
     return ok;
 }
 
@@ -3735,7 +3735,7 @@ bool DataManager::deleteSessionTrackAPIByUuid(const QString& uuid)
             emit deletedFromAllSessionTrackAPI(sessionTrackAPI);
             emit sessionTrackAPIPropertyListChanged();
             sessionTrackAPI->deleteLater();
-            sessionTrackAPI = 0;
+            sessionTrackAPI = nullptr;
             return true;
         }
     }
@@ -3746,7 +3746,7 @@ bool DataManager::deleteSessionTrackAPIByUuid(const QString& uuid)
 SessionTrackAPI* DataManager::findSessionTrackAPIByUuid(const QString& uuid){
     if (uuid.isNull() || uuid.isEmpty()) {
         qDebug() << "cannot find SessionTrackAPI from empty uuid";
-        return 0;
+        return nullptr;
     }
     for (int i = 0; i < mAllSessionTrackAPI.size(); ++i) {
         SessionTrackAPI* sessionTrackAPI;
@@ -3756,7 +3756,7 @@ SessionTrackAPI* DataManager::findSessionTrackAPIByUuid(const QString& uuid){
         }
     }
     qDebug() << "no SessionTrackAPI found for uuid " << uuid;
-    return 0;
+    return nullptr;
 }
 
 
@@ -3854,7 +3854,7 @@ QList<QObject*> DataManager::allSpeakerAPI()
 
 QQmlListProperty<SpeakerAPI> DataManager::speakerAPIPropertyList()
 {
-    return QQmlListProperty<SpeakerAPI>(this, 0,
+    return QQmlListProperty<SpeakerAPI>(this, nullptr,
             &DataManager::appendToSpeakerAPIProperty, &DataManager::speakerAPIPropertyCount,
             &DataManager::atSpeakerAPIProperty, &DataManager::clearSpeakerAPIProperty);
 }
@@ -3900,7 +3900,7 @@ SpeakerAPI* DataManager::atSpeakerAPIProperty(
         qWarning() << "cannot get SpeakerAPI* at pos " << pos
                 << "Object is not of type DataManager*";
     }
-    return 0;
+    return nullptr;
 }
 void DataManager::clearSpeakerAPIProperty(
         QQmlListProperty<SpeakerAPI> *speakerAPIList)
@@ -3913,7 +3913,7 @@ void DataManager::clearSpeakerAPIProperty(
 			emit dataManager->deletedFromAllSpeakerAPIById(speakerAPI->id());
 			emit dataManager->deletedFromAllSpeakerAPI(speakerAPI);
             speakerAPI->deleteLater();
-            speakerAPI = 0;
+            speakerAPI = nullptr;
         }
         dataManager->mAllSpeakerAPI.clear();
     } else {
@@ -3934,7 +3934,7 @@ void DataManager::deleteSpeakerAPI()
 		emit deletedFromAllSpeakerAPI(speakerAPI);
 		emit speakerAPIPropertyListChanged();
         speakerAPI->deleteLater();
-        speakerAPI = 0;
+        speakerAPI = nullptr;
      }
      mAllSpeakerAPI.clear();
 }
@@ -3965,7 +3965,7 @@ void DataManager::undoCreateSpeakerAPI(SpeakerAPI* speakerAPI)
     if (speakerAPI) {
         // qDebug() << "undoCreateSpeakerAPI " << speakerAPI->id();
         speakerAPI->deleteLater();
-        speakerAPI = 0;
+        speakerAPI = nullptr;
     }
 }
 
@@ -4004,7 +4004,7 @@ bool DataManager::deleteSpeakerAPI(SpeakerAPI* speakerAPI)
     emit deletedFromAllSpeakerAPI(speakerAPI);
     emit speakerAPIPropertyListChanged();
     speakerAPI->deleteLater();
-    speakerAPI = 0;
+    speakerAPI = nullptr;
     return ok;
 }
 
@@ -4020,7 +4020,7 @@ bool DataManager::deleteSpeakerAPIById(const int& id)
             emit deletedFromAllSpeakerAPI(speakerAPI);
             emit speakerAPIPropertyListChanged();
             speakerAPI->deleteLater();
-            speakerAPI = 0;
+            speakerAPI = nullptr;
             return true;
         }
     }
@@ -4038,7 +4038,7 @@ SpeakerAPI* DataManager::findSpeakerAPIById(const int& id){
         }
     }
     qDebug() << "no SpeakerAPI found for id " << id;
-    return 0;
+    return nullptr;
 }
 
 	

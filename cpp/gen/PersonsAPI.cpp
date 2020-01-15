@@ -98,7 +98,7 @@ QVariantMap PersonsAPI::toForeignMap()
 QVariantMap PersonsAPI::toCacheMap()
 {
 	// no transient properties found from data model
-	// use default toMao()
+    // use default toMap()
 	return toMap();
 }
 // ATT 

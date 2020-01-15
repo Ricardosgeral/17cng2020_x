@@ -32,7 +32,7 @@ Button {
         id: buttonBackground
         implicitHeight: 48
         color: primaryColor
-        radius: 2
+        radius: 20
         opacity: button.pressed ? 0.75 : 1.0
         layer.enabled: true
         layer.effect: DropShadow {

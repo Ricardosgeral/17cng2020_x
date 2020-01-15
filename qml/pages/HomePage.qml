@@ -55,7 +55,7 @@ ScrollView {
             // set Layout.fillWidth for the elements inside the RowLayout to make them expand
             Image{
                 Layout.fillWidth: true
-                Layout.maximumHeight: isTablet ?  250: 120
+                Layout.maximumHeight: isTablet ?  250: 115
 
                 Layout.maximumWidth: homePage.availableWidth
                 fillMode: Image.PreserveAspectFit
@@ -96,8 +96,8 @@ ScrollView {
         RowLayout {
             spacing: 10
             Image{
-                Layout.maximumHeight: 60
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
+                Layout.maximumHeight: 40
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.4
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/SPG_logo.png"
@@ -113,8 +113,8 @@ ScrollView {
             }
 
             Image{
-                Layout.maximumHeight:60
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
+                Layout.maximumHeight:40
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.4
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/LNEC_logo.png"
@@ -130,8 +130,8 @@ ScrollView {
 
             }
             Image{
-                Layout.maximumHeight:60
-                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/3.2
+                Layout.maximumHeight:40
+                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/3.4
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/ABMS_logo.png"
@@ -157,98 +157,98 @@ ScrollView {
             color: primaryColor
         }
 
-        LabelBodySecondary{
-            Layout.fillWidth: true
-            text: qsTr("Diamond: Banquet Sponsor")
-            font.pixelSize: 16
-        }
+//        LabelBodySecondary{
+//            Layout.fillWidth: true
+//            text: qsTr("Diamond: Banquet Sponsor")
+//            font.pixelSize: 16
+//        }
 
 
-        RowLayout {
-            Layout.fillWidth: true
-            // set Layout.fillWidth for the elements inside the RowLayout to make them expand
-            Image{
-                Layout.maximumHeight:65
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_diamond.png"
-            }
+//        RowLayout {
+//            Layout.fillWidth: true
+//            // set Layout.fillWidth for the elements inside the RowLayout to make them expand
+//            Image{
+//                Layout.maximumHeight:65
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_diamond.png"
+//            }
 
-        }
-
-
-        LabelBodySecondary{
-            Layout.fillWidth: true
-            text: qsTr("Platinum")
-            font.pixelSize: 16
-        }
-
-        RowLayout {
-            spacing: 10
-            Image{
-                Layout.maximumHeight: 60
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_platina.png"
-            }
-
-            Image{
-                Layout.maximumHeight:60
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_platina.png"
-            }
-            Image{
-                Layout.maximumHeight:60
-                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/3.2
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_platina.png"
-            }
-        }
+//        }
 
 
-        LabelBodySecondary{
-            Layout.fillWidth: true
-            text: qsTr("Gold")
-            font.pixelSize: 16
-        }
+//        LabelBodySecondary{
+//            Layout.fillWidth: true
+//            text: qsTr("Platinum")
+//            font.pixelSize: 16
+//        }
+
+//        RowLayout {
+//            spacing: 10
+//            Image{
+//                Layout.maximumHeight: 60
+//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_platina.png"
+//            }
+
+//            Image{
+//                Layout.maximumHeight:60
+//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_platina.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:60
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/3.2
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_platina.png"
+//            }
+//        }
 
 
-        RowLayout {
-            spacing: 10
-            Image{
-                Layout.maximumHeight: 60
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_ouro.png"
-            }
+//        LabelBodySecondary{
+//            Layout.fillWidth: true
+//            text: qsTr("Gold")
+//            font.pixelSize: 16
+//        }
 
-            Image{
-                Layout.maximumHeight:60
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_ouro.png"
-            }
-            Image{
-                Layout.maximumHeight:60
-                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_ouro.png"
-            }
-            Image{
-                Layout.maximumHeight:60
-                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_ouro.png"
-            }
-        }
+
+//        RowLayout {
+//            spacing: 10
+//            Image{
+//                Layout.maximumHeight: 60
+//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_ouro.png"
+//            }
+
+//            Image{
+//                Layout.maximumHeight:60
+//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_ouro.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:60
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_ouro.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:60
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_ouro.png"
+//            }
+//        }
 
 
         LabelBodySecondary{
@@ -258,66 +258,254 @@ ScrollView {
         }
 
         RowLayout {
-            spacing: 10
+//            spacing: 10
             Image{
                 Layout.maximumHeight: 50
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_prata.png"
+                source: "qrc:/images/extra/Logo_TPF.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://www.tpf.pt/")
+                    }
+                }
+            }
+
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+        }
+
+
+        LabelBodySecondary{
+            Layout.fillWidth: true
+            text: qsTr("Bronze")
+            font.pixelSize: 16
+        }
+
+        RowLayout {
+//            spacing: 10
+            Image{
+                Layout.maximumHeight: 50
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.5
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/extra/Logo_JETsj.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://jetsj.com/")
+                    }
+                }
+
+            }
+
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+//            Image{
+//                Layout.maximumHeight:50
+//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+//                Layout.fillWidth: true
+//                fillMode: Image.PreserveAspectFit
+//                source: "qrc:/images/extra/sponsors_types_prata.png"
+//            }
+        }
+
+        HorizontalDivider{Layout.fillWidth: true}
+
+        LabelTitle{
+            topPadding: 5
+            Layout.fillWidth: true
+            text: qsTr("Technical Exposition")
+            color: primaryColor
+        }
+
+
+        RowLayout {
+            spacing: 10
+            Image{
+                Layout.maximumHeight: 60
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/extra/Logo_Geoarea.jpg"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("http://www.geoarea.pt/")
+                    }
+                }
+
             }
 
             Image{
-                Layout.maximumHeight:50
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
+                Layout.maximumHeight:60
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.8
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_prata.png"
+                source: "qrc:/images/extra/Logo_Geocontrolo.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("http://www.geocontrole.pt/")
+                    }
+                }
+
             }
             Image{
                 Layout.maximumHeight:50
-                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/16
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_prata.png"
-            }
-            Image{
-                Layout.maximumHeight:50
-                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_prata.png"
-            }
-            Image{
-                Layout.maximumHeight:50
-                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/sponsors_types_prata.png"
+                source: "qrc:/images/extra/Logo_JETsj.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://jetsj.com/")
+                    }
+                }
+
             }
         }
 
 
-        HorizontalDivider{Layout.fillWidth: true}
 
-        ButtonRaised {
-            width: parent.width/2
-            visible: true
-            id: gotosite
-            topPadding: 10
-            bottomPadding: 15
-            text: qsTr("Congress website")
-            font.bold: true
-            onClicked: {
-                Qt.openUrlExternally("http://17cng2020.lnec.pt")
+        RowLayout {
+            spacing: 10
+            Image{
+                Layout.maximumHeight: 60
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.8
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/extra/Logo_Teixeiraduarte.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("http://www.teixeiraduarte.pt/")
+                    }
+                }
+
+            }
+
+            Image{
+                Layout.maximumHeight:60
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.2
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/extra/Logo_Tecnilab.png"
+
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://www.tecnilab.pt/")
+                    }
+                }
+
+
+            }
+            Image{
+                Layout.maximumHeight:50
+                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/10
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/extra/Logo_TPF.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://www.tpf.pt/")
+                    }
+                }
+
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
         HorizontalDivider{Layout.fillWidth: true}
+
+
 
 
     }// Column
 
+//    ButtonRaised {
+//        width: parent.width
+//        visible: true
+//        id: gotosite
+//        topPadding: 12
+//        anchors.bottom: parent.Bottom
+//        bottomPadding: 15
+//        text: qsTr("Congress website")
+//        font.bold: true
+//        onClicked: {
+//            Qt.openUrlExternally("http://17cng2020.lnec.pt")
+//        }
+//    }
 
+//    HorizontalDivider{Layout.fillWidth: true}
 
     FloatingActionButton {
         visible: !homePage.isAutoVersionCheckMode || !currentConference

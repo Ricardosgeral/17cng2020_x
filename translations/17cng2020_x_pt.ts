@@ -275,259 +275,274 @@ Danke schon für deine hilfe ekke!</source>
 <context>
     <name>DataUtil</name>
     <message>
-        <location filename="../cpp/datautil.cpp" line="210"/>
+        <location filename="../cpp/datautil.cpp" line="207"/>
         <source> Minutes)</source>
         <translation> Minutos)</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="213"/>
+        <location filename="../cpp/datautil.cpp" line="210"/>
         <source>Registration</source>
         <translation>Registration</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="216"/>
+        <location filename="../cpp/datautil.cpp" line="213"/>
         <source>Event</source>
         <translation>Event</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="220"/>
+        <location filename="../cpp/datautil.cpp" line="217"/>
         <source>Tour</source>
         <translation>Tour</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="225"/>
-        <location filename="../cpp/datautil.cpp" line="1624"/>
+        <location filename="../cpp/datautil.cpp" line="222"/>
+        <location filename="../cpp/datautil.cpp" line="1626"/>
         <source>Lunch</source>
         <translation>Lunch</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="227"/>
-        <location filename="../cpp/datautil.cpp" line="1639"/>
-        <location filename="../cpp/datautil.cpp" line="1654"/>
-        <location filename="../cpp/datautil.cpp" line="1669"/>
+        <location filename="../cpp/datautil.cpp" line="224"/>
+        <location filename="../cpp/datautil.cpp" line="1641"/>
+        <location filename="../cpp/datautil.cpp" line="1656"/>
+        <location filename="../cpp/datautil.cpp" line="1671"/>
         <source>Break</source>
         <translation>Break</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="230"/>
-        <source>Training</source>
-        <translation>Training</translation>
-    </message>
-    <message>
-        <location filename="../cpp/datautil.cpp" line="233"/>
-        <source>Lightning Talk</source>
-        <translation>Lightning Talk</translation>
-    </message>
-    <message>
-        <location filename="../cpp/datautil.cpp" line="236"/>
-        <source>Palestra</source>
-        <translation>Palestra</translation>
-    </message>
-    <message>
         <location filename="../cpp/datautil.cpp" line="239"/>
-        <source>Community</source>
-        <translation>Community</translation>
-    </message>
-    <message>
-        <location filename="../cpp/datautil.cpp" line="242"/>
         <source>Unconference</source>
         <translation>Unconference</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="245"/>
+        <location filename="../cpp/datautil.cpp" line="242"/>
         <source>Meeting</source>
         <translation>Meeting</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="247"/>
+        <location filename="../cpp/datautil.cpp" line="244"/>
         <source>Article</source>
-        <translation>Article</translation>
+        <translation>Comunicação</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="284"/>
+        <location filename="../cpp/datautil.cpp" line="281"/>
         <source> Rollback</source>
         <translation> Reversão</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="288"/>
+        <location filename="../cpp/datautil.cpp" line="285"/>
         <source> Reload</source>
         <translation> Recarregar</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="391"/>
+        <location filename="../cpp/datautil.cpp" line="388"/>
         <source>Room unknown</source>
         <translation>Sala desconhecida</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="927"/>
+        <location filename="../cpp/datautil.cpp" line="925"/>
         <source>startUpdate - Cannot create Directories</source>
         <translation>IniciarAtualização - Não é possivel criar diretorias</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="930"/>
+        <location filename="../cpp/datautil.cpp" line="928"/>
         <source>Request Schedule and Speakers from Server</source>
         <translation>Obtenção da programação e dos autores no servidor</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="937"/>
+        <location filename="../cpp/datautil.cpp" line="935"/>
         <source>Save Favorites</source>
         <translation>Salvar os Favoritos</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="942"/>
+        <location filename="../cpp/datautil.cpp" line="940"/>
         <source>Sync Authors</source>
         <translation>Atualizar os autores</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="950"/>
+        <location filename="../cpp/datautil.cpp" line="948"/>
         <source>Update failed. No Author received.
 Reloading current Data</source>
         <translation>Atualização falhou. Nenhum autor recebido.
 Recarregar dados existentes</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1027"/>
+        <location filename="../cpp/datautil.cpp" line="1025"/>
         <source>Sync Speaker Images</source>
         <translation>Atualizar as imagens dos autores</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1073"/>
+        <location filename="../cpp/datautil.cpp" line="1071"/>
         <source>Schedule and Speaker successfully synchronized :)</source>
         <translation>Horário e autores sincronizados com sucesso :)</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1084"/>
-        <source>Lisboa2</source>
-        <translation>Lisboa</translation>
+        <location filename="../cpp/datautil.cpp" line="171"/>
+        <location filename="../cpp/datautil.cpp" line="191"/>
+        <source>A</source>
+        <translation>C</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1086"/>
+        <location filename="../cpp/datautil.cpp" line="180"/>
+        <source>K</source>
+        <translation>P</translation>
+    </message>
+    <message>
+        <source>Keynote</source>
+        <translation type="vanished">Palestra</translation>
+    </message>
+    <message>
+        <location filename="../cpp/datautil.cpp" line="227"/>
+        <source>Jovens Geotécnicos</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../cpp/datautil.cpp" line="230"/>
+        <source>Lição Victor de Mello</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../cpp/datautil.cpp" line="233"/>
+        <source>Palestra</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../cpp/datautil.cpp" line="236"/>
+        <source>Prémio Teixeira Duarte</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../cpp/datautil.cpp" line="1082"/>
+        <source>Lisboa</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../cpp/datautil.cpp" line="1084"/>
         <source>Sync Sessions </source>
         <translation>Atualizar as Comunicações </translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1092"/>
-        <location filename="../cpp/datautil.cpp" line="1312"/>
-        <location filename="../cpp/datautil.cpp" line="1596"/>
+        <location filename="../cpp/datautil.cpp" line="1090"/>
+        <location filename="../cpp/datautil.cpp" line="1314"/>
+        <location filename="../cpp/datautil.cpp" line="1598"/>
         <source>Error: Data missed &apos;conference&apos;.</source>
         <translation>Erro: dados em falta para o congresso.</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1121"/>
+        <location filename="../cpp/datautil.cpp" line="1119"/>
         <source>Error: Received Map is empty.</source>
         <translation>Erro: o mapa recebido está vazio.</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1127"/>
+        <location filename="../cpp/datautil.cpp" line="1125"/>
         <source>Error: Received Map missed &apos;conference&apos;.</source>
         <translation>Erro: Não foi recebido o mapa do congresso.</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1170"/>
+        <location filename="../cpp/datautil.cpp" line="1168"/>
         <source>Error: Received Map missed &apos;days&apos;.</source>
         <translation>Erro: Falta o mapa &apos;dias&apos;.</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1175"/>
+        <location filename="../cpp/datautil.cpp" line="1173"/>
         <source>Error: # of &apos;days&apos; expected: </source>
         <translation>Erro: # de dias esperados: </translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1301"/>
+        <location filename="../cpp/datautil.cpp" line="1303"/>
         <source>Schedule successfully synchronized :)</source>
         <translation>O horário foi sincronizada com sucesso :)</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1325"/>
-        <location filename="../cpp/datautil.cpp" line="1372"/>
-        <location filename="../cpp/datautil.cpp" line="1449"/>
-        <location filename="../cpp/datautil.cpp" line="1526"/>
+        <location filename="../cpp/datautil.cpp" line="1327"/>
+        <location filename="../cpp/datautil.cpp" line="1374"/>
+        <location filename="../cpp/datautil.cpp" line="1451"/>
+        <location filename="../cpp/datautil.cpp" line="1528"/>
         <source>Registo/Entrega de documentação</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1340"/>
-        <location filename="../cpp/datautil.cpp" line="1387"/>
-        <location filename="../cpp/datautil.cpp" line="1417"/>
-        <location filename="../cpp/datautil.cpp" line="1464"/>
-        <location filename="../cpp/datautil.cpp" line="1494"/>
-        <location filename="../cpp/datautil.cpp" line="1544"/>
+        <location filename="../cpp/datautil.cpp" line="1342"/>
+        <location filename="../cpp/datautil.cpp" line="1389"/>
+        <location filename="../cpp/datautil.cpp" line="1419"/>
+        <location filename="../cpp/datautil.cpp" line="1466"/>
+        <location filename="../cpp/datautil.cpp" line="1496"/>
+        <location filename="../cpp/datautil.cpp" line="1546"/>
         <source>Pausa para café</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1355"/>
+        <location filename="../cpp/datautil.cpp" line="1357"/>
         <source>Cocktail de boas-vindas</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1402"/>
-        <location filename="../cpp/datautil.cpp" line="1479"/>
+        <location filename="../cpp/datautil.cpp" line="1404"/>
+        <location filename="../cpp/datautil.cpp" line="1481"/>
         <source>Almoço</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1432"/>
+        <location filename="../cpp/datautil.cpp" line="1434"/>
         <source>Banquete do 10CLBG</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1509"/>
+        <location filename="../cpp/datautil.cpp" line="1511"/>
         <source>Banquete do 17CNG</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1574"/>
+        <location filename="../cpp/datautil.cpp" line="1576"/>
         <source>Visitas Técnicas</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1609"/>
+        <location filename="../cpp/datautil.cpp" line="1611"/>
         <source>Registration and Coffee</source>
         <translation>Inscrição e entrega da documentação</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1686"/>
+        <location filename="../cpp/datautil.cpp" line="1688"/>
         <source>Now saving Conference Data to Cache</source>
         <translation>A salvar os dados do congresso em Cache</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="1823"/>
+        <location filename="../cpp/datautil.cpp" line="1825"/>
         <source>All done</source>
         <translation>Completo</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="2083"/>
+        <location filename="../cpp/datautil.cpp" line="2088"/>
         <source>API Version </source>
         <translation>Versão API </translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="2085"/>
+        <location filename="../cpp/datautil.cpp" line="2090"/>
         <source>Last Update </source>
         <translation>Última atualização </translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="2247"/>
+        <location filename="../cpp/datautil.cpp" line="2252"/>
         <source>No JSON Object received for Version Check</source>
         <translation>Não foi recebido o objeto JSON para confirmação da versão</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="2252"/>
+        <location filename="../cpp/datautil.cpp" line="2257"/>
         <source>Version Check: received Version Map is empty</source>
         <translation>Confirmação da versão: o mapa da versão recebido está vazio</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="2256"/>
+        <location filename="../cpp/datautil.cpp" line="2261"/>
         <source>Version Check: received Version Map missed Version Property</source>
         <translation>Verificação da versão: o mapa da versão não foi encontrado</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="2261"/>
+        <location filename="../cpp/datautil.cpp" line="2266"/>
         <source>Error: Received Map missed &apos;version&apos;.</source>
         <translation>Erro: Falta o mapa &apos;versão&apos;.</translation>
     </message>
     <message>
-        <location filename="../cpp/datautil.cpp" line="2269"/>
+        <location filename="../cpp/datautil.cpp" line="2274"/>
         <source>Error: &apos;Version&apos; wrong: </source>
         <translation>Erro: &apos;Versão&apos; errada: </translation>
     </message>
@@ -620,7 +635,7 @@ Recarregar dados existentes</translation>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="68"/>
         <source>Speed Navigation: Back to the List below in the stack without the need to move fingers to Top/Left Back Button.</source>
-        <translation>Navegação rápida: Permite voltar à lista inicial com apenas 1 click.</translation>
+        <translation>Navegação rápida: Permite voltar à lista inicial com apenas 1 clique.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="72"/>
@@ -640,7 +655,7 @@ Recarregar dados existentes</translation>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="90"/>
         <source>Complete Conference Program separated by Days and sorted by Starttime. Switch between Conference Days by Swiping left/right or tapping on a Tab from Tab Bar.</source>
-        <translation>Horário completo com as apresentações divididas por dias e ordenadas pelo início da Sessão respetiva. Escolha o dia na aba superior ou arrastando a tela para a esquerda/direita.</translation>
+        <translation>Horário completo com as apresentações divididas por dias e ordenadas pelo seu início. Escolha o dia na aba superior ou arrastando a tela para a esquerda/direita.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="94"/>
@@ -650,7 +665,7 @@ Recarregar dados existentes</translation>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="98"/>
         <source>There are many Sessions listed for a Day - to make it easier to jump to a specific Timeslot tap on this Button and select the Time.</source>
-        <translation>Permite visualizar as apresentações que vão ocorrer uma hora escolhida.</translation>
+        <translation>Permite visualizar as apresentações que vão ocorrer a uma hora escolhida.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="102"/>
@@ -658,7 +673,19 @@ Recarregar dados existentes</translation>
         <translation>Autores</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HelpPage.qml" line="160"/>
+        <location filename="../qml/pages/HelpPage.qml" line="107"/>
+        <source>List of all Speakers sorted by First Name. This List contains Speakers from both Conferences (17CNG and 10CLBG).</source>
+        <translation>Lista de todos os autores ordenada alfabeticamente.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="161"/>
+        <source>The language used in this app is that same of the device
+Languages available:en, pt</source>
+        <translation>Esta aplicação utiliza a linguagem definida no telemóvel
+Línguas disponíveis: en, pt</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="170"/>
         <source>Need more help?
 Want to report a bug or omission?
 Want your picture added/removed/changed
@@ -668,9 +695,9 @@ Note: The authors picture shown here was gathered from  Linkedin or Academic ins
         <translation>Precisa de mais ajuda?
 Deseja reportar algum erro ou omissão?
 Deseja que sua foto seja adicionada / removida / alterada
-envie-me um e-mail: ricardos@lnec.pt
+Enviar email para ricardos@lnec.pt
  
-Nota: A imagem dos autores foi obtida de sites de instituições académicas ou do Linkedin.</translation>
+Nota: A imagem dos autores foi obtida de sites de instituições académicas ou do LinkedIn.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="81"/>
@@ -678,14 +705,9 @@ Nota: A imagem dos autores foi obtida de sites de instituições académicas ou 
         <translation>A aplicação verifica automaticamente se existe alguma atualização. Este botão apenas fica visível se rejeitar a atualização automática. Ao clicar no botão são descarregados os dados atualizados.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HelpPage.qml" line="107"/>
-        <source>List of all Speakers sorted by Last Name. This List contains Speakers from both Conferences (17CNG and 10CLBG).</source>
-        <translation>Lista de todos os autores ordenada pelo APELIDO.</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/HelpPage.qml" line="111"/>
         <source>To find a specific Speaker tap on this Button and select the Letter.</source>
-        <translation>Permite procurar um autor pela 1a letra do APELIDO.</translation>
+        <translation>Permite procurar um autor pela 1a letra do NOME.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="115"/>
@@ -737,13 +759,6 @@ Nota: A imagem dos autores foi obtida de sites de instituições académicas ou 
         <source>Session Time from - to.</source>
         <translation>Horário de início da sessão.</translation>
     </message>
-    <message>
-        <source>Need more help?
-email me: ricardos@lnec.pt</source>
-        <translation type="vanished">Ainda precisa de ajuda?
-Quer a sua imagem na página dos autores?
-Envie um email para: ricardos@lnec.pt</translation>
-    </message>
 </context>
 <context>
     <name>HomePage</name>
@@ -763,63 +778,53 @@ Envie um email para: ricardos@lnec.pt</translation>
         <translation>Patrocinadores</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="162"/>
-        <source>Diamond: Banquet Sponsor</source>
-        <translation>Diamante:  (Banquete-17CNG)</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HomePage.qml" line="182"/>
-        <source>Platinum</source>
-        <translation>Platina</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HomePage.qml" line="215"/>
-        <source>Gold</source>
-        <translation>Ouro</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/HomePage.qml" line="256"/>
         <source>Silver</source>
         <translation>Prata</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="309"/>
-        <source>Congress website</source>
-        <translation>Página de internet do Congresso</translation>
+        <location filename="../qml/pages/HomePage.qml" line="310"/>
+        <source>Bronze</source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="339"/>
+        <location filename="../qml/pages/HomePage.qml" line="367"/>
+        <source>Technical Exposition</source>
+        <translation>Exposição Técnica</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HomePage.qml" line="527"/>
         <source>Sorry - the Conference is closed.
 No more Updates available</source>
         <translation>Desculpe - O congresso terminou.
 Não existem mais atualizações</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="393"/>
+        <location filename="../qml/pages/HomePage.qml" line="581"/>
         <source>Checking Conference Server
 for new Program Data ...</source>
         <translation>A verificar o servidor do congresso
 para nova programação ...</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="405"/>
+        <location filename="../qml/pages/HomePage.qml" line="593"/>
         <source>New Conference Data available ...</source>
         <translation>Existe uma atualização da programação ...</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="441"/>
+        <location filename="../qml/pages/HomePage.qml" line="629"/>
         <source>Update available.
 API Version: </source>
         <translation>Atualização disponível.
 Versão API: </translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="456"/>
+        <location filename="../qml/pages/HomePage.qml" line="644"/>
         <source>No Update required.</source>
         <translation>Os dados encontram-se atualizados.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="466"/>
+        <location filename="../qml/pages/HomePage.qml" line="654"/>
         <source>Version Check failed:
 </source>
         <translation>Falhou a verificação da versão:
@@ -1067,8 +1072,8 @@ Pretende sair da app?
     </message>
     <message>
         <location filename="../qml/pages/SessionDetailPage.qml" line="254"/>
-        <source>Tap on the Author to get the Details.</source>
-        <translation>Clique no autor para obter detalhes.</translation>
+        <source>Tap on the Author to get the Details. Authors sorted by alfabethical order!</source>
+        <translation>Clique no autor para obter detalhes. Autores por ordem alfabética!</translation>
     </message>
     <message>
         <location filename="../qml/pages/SessionDetailPage.qml" line="295"/>
