@@ -329,6 +329,24 @@ ScrollView {
 
             }
 
+            Image{
+                Layout.maximumHeight: 50
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.5
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/extra/Logo_Elsamex-Portugal.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("http://www.elsamex.pt/")
+                    }
+                }
+
+            }
+
+
+
 //            Image{
 //                Layout.maximumHeight:50
 //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7

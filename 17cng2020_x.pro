@@ -186,7 +186,7 @@ ios {
     # MY_DEVELOPMENT_TEAM.value = your team Id from Apple Developer Account
     # QMAKE_MAC_XCODE_SETTINGS += MY_DEVELOPMENT_TEAM
 
-    include(ios_signature.pri) // Ricardo - coloquei este ficheiro no .gitignore
+    include(ios_signature.pri) # Ricardo - coloquei este ficheiro no .gitignore
 
     # see https://bugreports.qt.io/browse/QTBUG-70072
     QMAKE_TARGET_BUNDLE_PREFIX = org.ricardos.17cng2020
