@@ -186,7 +186,7 @@ ios {
     # MY_DEVELOPMENT_TEAM.value = your team Id from Apple Developer Account
     # QMAKE_MAC_XCODE_SETTINGS += MY_DEVELOPMENT_TEAM
 
-    include(ios_signature.pri)
+    #include(ios_signature.pri) // Ricardo - Comentei esta linha
 
     # see https://bugreports.qt.io/browse/QTBUG-70072
     QMAKE_TARGET_BUNDLE_PREFIX = org.ekkescorner
