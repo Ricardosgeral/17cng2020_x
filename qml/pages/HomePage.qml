@@ -157,98 +157,98 @@ ScrollView {
             color: primaryColor
         }
 
-//        LabelBodySecondary{
-//            Layout.fillWidth: true
-//            text: qsTr("Diamond: Banquet Sponsor")
-//            font.pixelSize: 16
-//        }
+        //        LabelBodySecondary{
+        //            Layout.fillWidth: true
+        //            text: qsTr("Diamond: Banquet Sponsor")
+        //            font.pixelSize: 16
+        //        }
 
 
-//        RowLayout {
-//            Layout.fillWidth: true
-//            // set Layout.fillWidth for the elements inside the RowLayout to make them expand
-//            Image{
-//                Layout.maximumHeight:65
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_diamond.png"
-//            }
+        //        RowLayout {
+        //            Layout.fillWidth: true
+        //            // set Layout.fillWidth for the elements inside the RowLayout to make them expand
+        //            Image{
+        //                Layout.maximumHeight:65
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_diamond.png"
+        //            }
 
-//        }
-
-
-//        LabelBodySecondary{
-//            Layout.fillWidth: true
-//            text: qsTr("Platinum")
-//            font.pixelSize: 16
-//        }
-
-//        RowLayout {
-//            spacing: 10
-//            Image{
-//                Layout.maximumHeight: 60
-//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_platina.png"
-//            }
-
-//            Image{
-//                Layout.maximumHeight:60
-//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_platina.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:60
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/3.2
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_platina.png"
-//            }
-//        }
+        //        }
 
 
-//        LabelBodySecondary{
-//            Layout.fillWidth: true
-//            text: qsTr("Gold")
-//            font.pixelSize: 16
-//        }
+        //        LabelBodySecondary{
+        //            Layout.fillWidth: true
+        //            text: qsTr("Platinum")
+        //            font.pixelSize: 16
+        //        }
+
+        //        RowLayout {
+        //            spacing: 10
+        //            Image{
+        //                Layout.maximumHeight: 60
+        //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_platina.png"
+        //            }
+
+        //            Image{
+        //                Layout.maximumHeight:60
+        //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3.2
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_platina.png"
+        //            }
+        //            Image{
+        //                Layout.maximumHeight:60
+        //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/3.2
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_platina.png"
+        //            }
+        //        }
 
 
-//        RowLayout {
-//            spacing: 10
-//            Image{
-//                Layout.maximumHeight: 60
-//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_ouro.png"
-//            }
+        //        LabelBodySecondary{
+        //            Layout.fillWidth: true
+        //            text: qsTr("Gold")
+        //            font.pixelSize: 16
+        //        }
 
-//            Image{
-//                Layout.maximumHeight:60
-//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_ouro.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:60
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_ouro.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:60
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_ouro.png"
-//            }
-//        }
+
+        //        RowLayout {
+        //            spacing: 10
+        //            Image{
+        //                Layout.maximumHeight: 60
+        //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_ouro.png"
+        //            }
+
+        //            Image{
+        //                Layout.maximumHeight:60
+        //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.4
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_ouro.png"
+        //            }
+        //            Image{
+        //                Layout.maximumHeight:60
+        //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_ouro.png"
+        //            }
+        //            Image{
+        //                Layout.maximumHeight:60
+        //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/4.4
+        //                Layout.fillWidth: true
+        //                fillMode: Image.PreserveAspectFit
+        //                source: "qrc:/images/extra/sponsors_types_ouro.png"
+        //            }
+        //        }
 
 
         LabelBodySecondary{
@@ -258,11 +258,12 @@ ScrollView {
         }
 
         RowLayout {
-//            spacing: 10
+            //            spacing: 10
             Image{
-                Layout.maximumHeight: 50
+                Layout.maximumHeight: 60
                 Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/3
                 Layout.fillWidth: true
+                Layout.alignment: parent.left
                 fillMode: Image.PreserveAspectFit
                 source: "qrc:/images/extra/Logo_TPF.png"
 
@@ -274,34 +275,34 @@ ScrollView {
                 }
             }
 
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
         }
 
 
@@ -312,28 +313,15 @@ ScrollView {
         }
 
         RowLayout {
-//            spacing: 10
-            Image{
-                Layout.maximumHeight: 50
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.5
-                Layout.fillWidth: true
-                fillMode: Image.PreserveAspectFit
-                source: "qrc:/images/extra/Logo_JETsj.png"
-
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        Qt.openUrlExternally("https://jetsj.com/")
-                    }
-                }
-
-            }
+            //            spacing: 10
 
             Image{
                 Layout.maximumHeight: 50
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/4.5
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/6.0
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
+                Layout.alignment: parent.left
+
                 source: "qrc:/images/extra/Logo_Elsamex-Portugal.png"
 
                 MouseArea {
@@ -346,36 +334,58 @@ ScrollView {
             }
 
 
-
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
-//            Image{
-//                Layout.maximumHeight:50
-//                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-//                Layout.fillWidth: true
-//                fillMode: Image.PreserveAspectFit
-//                source: "qrc:/images/extra/sponsors_types_prata.png"
-//            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
+            //            Image{
+            //                Layout.maximumHeight:50
+            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
+            //                Layout.fillWidth: true
+            //                fillMode: Image.PreserveAspectFit
+            //                source: "qrc:/images/extra/sponsors_types_prata.png"
+            //            }
         }
+
+
+        RowLayout {
+
+            Image{
+                Layout.maximumHeight: 50
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/6.5
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                Layout.alignment: parent.left
+
+                source: "qrc:/images/extra/Logo_JETsj.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://jetsj.com/")
+                    }
+                }
+
+            }
+        }
+
 
         HorizontalDivider{Layout.fillWidth: true}
 
@@ -509,21 +519,21 @@ ScrollView {
 
     }// Column
 
-//    ButtonRaised {
-//        width: parent.width
-//        visible: true
-//        id: gotosite
-//        topPadding: 12
-//        anchors.bottom: parent.Bottom
-//        bottomPadding: 15
-//        text: qsTr("Congress website")
-//        font.bold: true
-//        onClicked: {
-//            Qt.openUrlExternally("http://17cng2020.lnec.pt")
-//        }
-//    }
+    //    ButtonRaised {
+    //        width: parent.width
+    //        visible: true
+    //        id: gotosite
+    //        topPadding: 12
+    //        anchors.bottom: parent.Bottom
+    //        bottomPadding: 15
+    //        text: qsTr("Congress website")
+    //        font.bold: true
+    //        onClicked: {
+    //            Qt.openUrlExternally("http://17cng2020.lnec.pt")
+    //        }
+    //    }
 
-//    HorizontalDivider{Layout.fillWidth: true}
+    //    HorizontalDivider{Layout.fillWidth: true}
 
     FloatingActionButton {
         visible: !homePage.isAutoVersionCheckMode || !currentConference
