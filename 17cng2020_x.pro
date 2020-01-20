@@ -186,11 +186,11 @@ ios {
     # MY_DEVELOPMENT_TEAM.value = your team Id from Apple Developer Account
     # QMAKE_MAC_XCODE_SETTINGS += MY_DEVELOPMENT_TEAM
 
-    #include(ios_signature.pri) // Ricardo - Comentei esta linha
+    include(ios_signature.pri) // Ricardo - coloquei este ficheiro no .gitignore
 
     # see https://bugreports.qt.io/browse/QTBUG-70072
-    QMAKE_TARGET_BUNDLE_PREFIX = org.ekkescorner
-    QMAKE_BUNDLE = c2g.qtws
+    QMAKE_TARGET_BUNDLE_PREFIX = org.ricardos.17cng2020
+    QMAKE_BUNDLE = 17cng2020 #c2g.qtws
 
     # Note for devices: 1=iPhone, 2=iPad, 1,2=Universal.
     QMAKE_APPLE_TARGETED_DEVICE_FAMILY = 1,2
