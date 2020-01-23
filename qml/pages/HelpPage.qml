@@ -57,7 +57,7 @@ Flickable {
             }
             HelpRow {
                 iconName: "more_vert.png"
-                helpText: qsTr("Options Button: Opens a Menu with some options.")
+                helpText: qsTr("Options Button: Opens a Menu with few options.")
             }
             HelpRow {
                 iconName: "arrow_back.png"
@@ -74,11 +74,11 @@ Flickable {
             }
             HelpRow {
                 iconName: "home.png"
-                helpText: qsTr("Homepage - the first Page. Form this Page you can switch between the Welkome day and the 17CNG-10CLBG conferences.")
+                helpText: qsTr("Homepage - the first Page.")
             }
             HelpRow {
                 iconName: "refresh.png"
-                helpText: qsTr("App checks automatically if an Update is required. To start Schedule- and Speaker Updates manually please tap on the Refresh Button. This Button is only visible if you rejected Auto - Update.")
+                helpText: qsTr("App checks automatically if an Update is required. To start Schedule and Author Updates manually please tap on the Refresh Button. This Button is only visible if you rejected Auto - Update.")
             }
             LabelTitle {
                 leftPadding: 10
@@ -87,11 +87,11 @@ Flickable {
             }
             HelpRow {
                 iconName: "schedule.png"
-                helpText: qsTr("Complete Conference Program separated by Days and sorted by Starttime. Switch between Conference Days by Swiping left/right or tapping on a Tab from Tab Bar.")
+                helpText: qsTr("Complete Congress Program separated by Days and sorted by presentation Starttime. Switch between Congress Days by Swiping left/right or tapping on a Tab from Tab Bar.")
             }
             HelpRow {
                 iconName: "stars.png"
-                helpText: qsTr("Button to see your Personal Conference Selection. Mark Sessions for your Personal Selections by checking the Favorites Button.")
+                helpText: qsTr("Button to see your Personal Congress Selection. Mark Sessions for your Personal Selections by checking the Favorites Button.")
             }
             HelpRow {
                 iconName: "time.png"
@@ -104,11 +104,11 @@ Flickable {
             }
             HelpRow {
                 iconName: "supervisor.png"
-                helpText: qsTr("List of all Speakers sorted by First Name. This List contains Speakers from both Conferences (17CNG and 10CLBG).")
+                helpText: qsTr("List of all Authors sorted by First Name.")
             }
             HelpRow {
                 iconName: "az.png"
-                helpText: qsTr("To find a specific Speaker tap on this Button and select the Letter.")
+                helpText: qsTr("To find a specific Author tap on this Button and select the 1st letter of First Name.")
             }
             LabelTitle {
                 leftPadding: 10
@@ -117,7 +117,7 @@ Flickable {
             }
             HelpRow {
                 iconName: "tag.png"
-                helpText: qsTr("List of all Conference Tracks. Tap on a row to see all Sessions of selected Track.")
+                helpText: qsTr("List of all Congress Topics. Tap on a row to see all Presentations of selected Topic.")
             }
             LabelTitle {
                 leftPadding: 10
@@ -139,15 +139,15 @@ Flickable {
             }
             HelpRow {
                 iconName: "stars.png"
-                helpText: qsTr("The Favorites Button. Tap on it to mark a Session and to add this to your Personal Schedule. Button is a Toggle - tap again to remove from your Personal Schedule.")
+                helpText: qsTr("The Favorites Button. Tap on it to mark an Article and to add this to your Personal Schedule. Button is a Toggle - tap again to remove from your Personal Schedule.")
             }
             HelpRow {
                 iconName: "directions.png"
-                helpText: qsTr("See the Floorplan of the Room where the Session runs.")
+                helpText: qsTr("See the Floorplan of the Room where the Presentation runs.")
             }
             HelpRow {
                 iconName: "calendar.png"
-                helpText: qsTr("Conference Date.")
+                helpText: qsTr("Presentation Date.")
             }
             HelpRow {
                 iconName: "time.png"

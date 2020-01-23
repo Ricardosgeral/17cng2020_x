@@ -387,10 +387,6 @@ Recarregar dados existentes</translation>
         <translation>P</translation>
     </message>
     <message>
-        <source>Keynote</source>
-        <translation type="vanished">Palestra</translation>
-    </message>
-    <message>
         <location filename="../cpp/datautil.cpp" line="227"/>
         <source>Jovens Geotécnicos</source>
         <translation></translation>
@@ -623,11 +619,6 @@ Recarregar dados existentes</translation>
         <translation>Botão de menu: abre a aba lateral, que também pode ser acionada através de arraste a partir do canto esquerdo do ecrã.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HelpPage.qml" line="60"/>
-        <source>Options Button: Opens a Menu with some options.</source>
-        <translation>Abre um Menu com algumas opções.</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/HelpPage.qml" line="64"/>
         <source>Back Button: Top/Left from TitleBar goes one Page back. On Android you can also use OS - specific Back Button below the Page.</source>
         <translation>Voltar atrás: Botão no canto esquerdo da barra superior, que permite voltar uma página atrás. No sistema Android também pode usar o botão &lt; do próprio aparelho.</translation>
@@ -643,29 +634,14 @@ Recarregar dados existentes</translation>
         <translation>Início</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HelpPage.qml" line="77"/>
-        <source>Homepage - the first Page. Form this Page you can switch between the Welkome day and the 17CNG-10CLBG conferences.</source>
-        <translation>Pagina Inícial: Informação geral sobre o evento, a organização e os patrocinadores.</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/HelpPage.qml" line="85"/>
         <source>Program</source>
         <translation>Programa</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HelpPage.qml" line="90"/>
-        <source>Complete Conference Program separated by Days and sorted by Starttime. Switch between Conference Days by Swiping left/right or tapping on a Tab from Tab Bar.</source>
-        <translation>Horário completo com as apresentações divididas por dias e ordenadas pelo seu início. Escolha o dia na aba superior ou arrastando a tela para a esquerda/direita.</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HelpPage.qml" line="94"/>
-        <source>Button to see your Personal Conference Selection. Mark Sessions for your Personal Selections by checking the Favorites Button.</source>
-        <translation>Botão para visualizar as apresentações Favoritas. A &apos;Estrela&apos; permite marcar/desmarcar os seus Favoritos.</translation>
-    </message>
-    <message>
         <location filename="../qml/pages/HelpPage.qml" line="98"/>
         <source>There are many Sessions listed for a Day - to make it easier to jump to a specific Timeslot tap on this Button and select the Time.</source>
-        <translation>Permite visualizar as apresentações que vão ocorrer a uma hora escolhida.</translation>
+        <translation>Permite visualizar as apresentações que vão ocorrer a uma dada hora.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="102"/>
@@ -673,16 +649,16 @@ Recarregar dados existentes</translation>
         <translation>Autores</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HelpPage.qml" line="107"/>
-        <source>List of all Speakers sorted by First Name. This List contains Speakers from both Conferences (17CNG and 10CLBG).</source>
-        <translation>Lista de todos os autores ordenada alfabeticamente.</translation>
+        <location filename="../qml/pages/HelpPage.qml" line="150"/>
+        <source>Presentation Date.</source>
+        <translation>Data da apresentação.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="161"/>
         <source>The language used in this app is that same of the device
 Languages available:en, pt</source>
-        <translation>Esta aplicação utiliza a linguagem definida no telemóvel
-Línguas disponíveis: en, pt</translation>
+        <translation>Esta aplicação utiliza a linguagem escolhida no sistema do telemóvel
+Línguas disponíveis: Inglês e Português</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="170"/>
@@ -692,22 +668,12 @@ Want your picture added/removed/changed
 email me: ricardos@lnec.pt
  
 Note: The authors picture shown here was gathered from  Linkedin or Academic institutions sites.</source>
-        <translation>Precisa de mais ajuda?
+        <translation>Precisa de ajuda adicional?
 Deseja reportar algum erro ou omissão?
 Deseja que sua foto seja adicionada / removida / alterada
 Enviar email para ricardos@lnec.pt
  
-Nota: A imagem dos autores foi obtida de sites de instituições académicas ou do LinkedIn.</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HelpPage.qml" line="81"/>
-        <source>App checks automatically if an Update is required. To start Schedule- and Speaker Updates manually please tap on the Refresh Button. This Button is only visible if you rejected Auto - Update.</source>
-        <translation>A aplicação verifica automaticamente se existe alguma atualização. Este botão apenas fica visível se rejeitar a atualização automática. Ao clicar no botão são descarregados os dados atualizados.</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HelpPage.qml" line="111"/>
-        <source>To find a specific Speaker tap on this Button and select the Letter.</source>
-        <translation>Permite procurar um autor pela 1a letra do NOME.</translation>
+Nota: A imagem dos autores é obtida de sites de instituições académicas ou do LinkedIn.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="115"/>
@@ -715,14 +681,49 @@ Nota: A imagem dos autores foi obtida de sites de instituições académicas ou 
         <translation>Temas</translation>
     </message>
     <message>
+        <location filename="../qml/pages/HelpPage.qml" line="60"/>
+        <source>Options Button: Opens a Menu with few options.</source>
+        <translation>Abre um Menu com algumas opções.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="77"/>
+        <source>Homepage - the first Page.</source>
+        <translation>Pagina Inícial - Informação geral sobre o evento, a organização e os patrocinadores.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="81"/>
+        <source>App checks automatically if an Update is required. To start Schedule and Author Updates manually please tap on the Refresh Button. This Button is only visible if you rejected Auto - Update.</source>
+        <translation>A aplicação verifica automaticamente se existe alguma atualização. Este botão apenas fica visível se rejeitar a atualização automática. Ao clicar no botão são descarregados os dados atualizados.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="90"/>
+        <source>Complete Congress Program separated by Days and sorted by presentation Starttime. Switch between Congress Days by Swiping left/right or tapping on a Tab from Tab Bar.</source>
+        <translation>Horário completo com as apresentações divididas por dias e ordenadas pelo seu início. Escolha o dia na aba superior ou arrastando a tela para a esquerda/direita.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="94"/>
+        <source>Button to see your Personal Congress Selection. Mark Sessions for your Personal Selections by checking the Favorites Button.</source>
+        <translation>Botão para visualizara Lista de Favoritos. A &apos;Estrela&apos; permite adicionar/remover as apresentações da Lista de Favoritos.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="107"/>
+        <source>List of all Authors sorted by First Name.</source>
+        <translation>Lista de Autores ordenada pelo PRIMEIRO NOME.</translation>
+    </message>
+    <message>
+        <location filename="../qml/pages/HelpPage.qml" line="111"/>
+        <source>To find a specific Author tap on this Button and select the 1st letter of First Name.</source>
+        <translation>Permite procurar um autor pela 1a letra do PRIMEIRO NOME.</translation>
+    </message>
+    <message>
         <location filename="../qml/pages/HelpPage.qml" line="120"/>
-        <source>List of all Conference Tracks. Tap on a row to see all Sessions of selected Track.</source>
-        <translation>Lista dos Temas do Congresso. Selecione um tema para ver todas as apresentações associadas.</translation>
+        <source>List of all Congress Topics. Tap on a row to see all Presentations of selected Topic.</source>
+        <translation>Lista dos Temas do congresso. Selecione um Tema para ver todas as apresentações associadas.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="124"/>
         <source>Venue</source>
-        <translation>Local</translation>
+        <translation>Local do Evento</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="129"/>
@@ -732,7 +733,7 @@ Nota: A imagem dos autores foi obtida de sites de instituições académicas ou 
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="133"/>
         <source>List of all Rooms. Tap on a Row to see all Sessions running in this Room. Tap on the Thumbnail to see the Floorplan of the selected Room.</source>
-        <translation>Lista de todas as Salas. Pode visualizar as sessões que vão ocorrer em cada Sala. Se clicar sobre a imagem obtém uma planta de localização.</translation>
+        <translation>Lista de todas as Salas. Pode visualizar as apresentações que vão ocorrer em cada Sala. Se clicar sobre a imagem obtém uma planta de localização.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="137"/>
@@ -741,18 +742,13 @@ Nota: A imagem dos autores foi obtida de sites de instituições académicas ou 
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="142"/>
-        <source>The Favorites Button. Tap on it to mark a Session and to add this to your Personal Schedule. Button is a Toggle - tap again to remove from your Personal Schedule.</source>
-        <translation>Botão de Favoritos. Selecione/desmarque uma apresentação para adicionar/retirar da lista dos Favoritos.</translation>
+        <source>The Favorites Button. Tap on it to mark an Article and to add this to your Personal Schedule. Button is a Toggle - tap again to remove from your Personal Schedule.</source>
+        <translation>Lista de Favoritos. Selecione/desmarque uma apresentação para adicionar/retirar da lista de Favoritos.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="146"/>
-        <source>See the Floorplan of the Room where the Session runs.</source>
+        <source>See the Floorplan of the Room where the Presentation runs.</source>
         <translation>Ver a Planta de localização de uma Sala onde vai decorrer a Apresentação.</translation>
-    </message>
-    <message>
-        <location filename="../qml/pages/HelpPage.qml" line="150"/>
-        <source>Conference Date.</source>
-        <translation>Data da apresentação.</translation>
     </message>
     <message>
         <location filename="../qml/pages/HelpPage.qml" line="154"/>
@@ -783,48 +779,48 @@ Nota: A imagem dos autores foi obtida de sites de instituições académicas ou 
         <translation>Prata</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="310"/>
+        <location filename="../qml/pages/HomePage.qml" line="311"/>
         <source>Bronze</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="367"/>
+        <location filename="../qml/pages/HomePage.qml" line="395"/>
         <source>Technical Exposition</source>
         <translation>Exposição Técnica</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="527"/>
+        <location filename="../qml/pages/HomePage.qml" line="555"/>
         <source>Sorry - the Conference is closed.
 No more Updates available</source>
         <translation>Desculpe - O congresso terminou.
 Não existem mais atualizações</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="581"/>
+        <location filename="../qml/pages/HomePage.qml" line="609"/>
         <source>Checking Conference Server
 for new Program Data ...</source>
         <translation>A verificar o servidor do congresso
 para nova programação ...</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="593"/>
+        <location filename="../qml/pages/HomePage.qml" line="621"/>
         <source>New Conference Data available ...</source>
         <translation>Existe uma atualização da programação ...</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="629"/>
+        <location filename="../qml/pages/HomePage.qml" line="657"/>
         <source>Update available.
 API Version: </source>
         <translation>Atualização disponível.
 Versão API: </translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="644"/>
+        <location filename="../qml/pages/HomePage.qml" line="672"/>
         <source>No Update required.</source>
         <translation>Os dados encontram-se atualizados.</translation>
     </message>
     <message>
-        <location filename="../qml/pages/HomePage.qml" line="654"/>
+        <location filename="../qml/pages/HomePage.qml" line="682"/>
         <source>Version Check failed:
 </source>
         <translation>Falhou a verificação da versão:
