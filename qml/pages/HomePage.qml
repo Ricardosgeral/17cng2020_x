@@ -259,9 +259,26 @@ ScrollView {
 
         RowLayout {
             //            spacing: 10
+
             Image{
-                Layout.maximumHeight: 60
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/6
+                Layout.maximumHeight:70
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.2
+                Layout.fillWidth: true
+                fillMode: Image.PreserveAspectFit
+                source: "qrc:/images/extra/Logo_EDP.png"
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        Qt.openUrlExternally("https://www.edp.pt/")
+                    }
+                }
+
+            }
+
+            Image{
+                Layout.maximumHeight: 70
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.2
                 Layout.fillWidth: true
                 Layout.alignment: parent.left
                 fillMode: Image.PreserveAspectFit
@@ -279,21 +296,7 @@ ScrollView {
 
 
 
-                        Image{
-                            Layout.maximumHeight:50
-                            Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/6
-                            Layout.fillWidth: true
-                            fillMode: Image.PreserveAspectFit
-                            source: "qrc:/images/extra/Logo_EDP.png"
 
-                            MouseArea {
-                                anchors.fill: parent
-                                onClicked: {
-                                    Qt.openUrlExternally("https://www.edp.pt/")
-                                }
-                            }
-
-                        }
             //            Image{
             //                Layout.maximumHeight:50
             //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
@@ -329,7 +332,7 @@ ScrollView {
 
             Image{
                 Layout.maximumHeight: 50
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/6.0
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/12
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 Layout.alignment: parent.left
@@ -346,42 +349,10 @@ ScrollView {
             }
 
 
-            //            Image{
-            //                Layout.maximumHeight:50
-            //                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/5.7
-            //                Layout.fillWidth: true
-            //                fillMode: Image.PreserveAspectFit
-            //                source: "qrc:/images/extra/sponsors_types_prata.png"
-            //            }
-            //            Image{
-            //                Layout.maximumHeight:50
-            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-            //                Layout.fillWidth: true
-            //                fillMode: Image.PreserveAspectFit
-            //                source: "qrc:/images/extra/sponsors_types_prata.png"
-            //            }
-            //            Image{
-            //                Layout.maximumHeight:50
-            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-            //                Layout.fillWidth: true
-            //                fillMode: Image.PreserveAspectFit
-            //                source: "qrc:/images/extra/sponsors_types_prata.png"
-            //            }
-            //            Image{
-            //                Layout.maximumHeight:50
-            //                Layout.maximumWidth : (Math.max(implicitWidth, homePage.availableWidth))/5.7
-            //                Layout.fillWidth: true
-            //                fillMode: Image.PreserveAspectFit
-            //                source: "qrc:/images/extra/sponsors_types_prata.png"
-            //            }
-        }
-
-
-        RowLayout {
 
             Image{
                 Layout.maximumHeight: 50
-                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/6.5
+                Layout.maximumWidth: (Math.max(implicitWidth, homePage.availableWidth))/12
                 Layout.fillWidth: true
                 fillMode: Image.PreserveAspectFit
                 Layout.alignment: parent.left
